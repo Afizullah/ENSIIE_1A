@@ -1,0 +1,68 @@
+mai 22, 2018 12:03:05 AM logger.LoggerFactory getLogger
+INFOS: log file created
+mai 22, 2018 12:03:05 AM logger.LoggerFactory getLogger
+INFOS: Logger ready
+mai 22, 2018 12:03:05 AM RunChatClient launch
+INFOS: Creating client to Afiz at port 1394 with verbose off ... 
+mai 22, 2018 12:03:05 AM logger.LoggerFactory getLogger
+INFOS: Logger ready
+mai 22, 2018 12:03:05 AM widgets.AbstractClientFrame <init>
+INFOS: AbstractClientFrame : PipedInputStream Created
+mai 22, 2018 12:03:05 AM widgets.AbstractClientFrame <init>
+INFOS: AbstractClientFrame : PipedOutputStream Created
+mai 22, 2018 12:03:05 AM widgets.AbstractClientFrame <init>
+INFOS: AbstractClientFrame : Printwriter to PipedOutputStream Created
+mai 22, 2018 12:03:06 AM logger.LoggerFactory getLogger
+INFOS: Logger ready
+mai 22, 2018 12:03:06 AM chat.client.ChatClient <init>
+INFOS: ChatClient: socket created
+mai 22, 2018 12:03:06 AM chat.client.ChatClient <init>
+INFOS: ChatCLient : got client output stream to server
+mai 22, 2018 12:03:06 AM chat.client.ChatClient <init>
+INFOS: ChatClient: sending name to server ... 
+mai 22, 2018 12:03:06 AM logger.LoggerFactory getLogger
+INFOS: Logger ready
+mai 22, 2018 12:03:06 AM chat.client.UserHandler <init>
+INFOS: UserHandler: creating user input buffered reader ... 
+mai 22, 2018 12:03:06 AM chat.client.UserHandler <init>
+INFOS: UserHandler: creating server output print writer ... 
+mai 22, 2018 12:03:06 AM logger.LoggerFactory getLogger
+INFOS: Logger ready
+mai 22, 2018 12:03:06 AM chat.client.ServerHandler <init>
+INFOS: ServerHandler: creating server input reader ... 
+mai 22, 2018 12:03:06 AM chat.client.ServerHandler <init>
+INFOS: ServerHandler: creating user output ... 
+mai 22, 2018 12:03:23 AM widgets.AbstractClientFrame sendMessage
+INFOS: ClientFrame::sendMessage writing out: test
+mai 22, 2018 12:03:23 AM widgets.ClientFrame2$SendMessageAction actionPerformed
+INFOS: Sent message = test
+mai 22, 2018 12:03:30 AM widgets.AbstractClientFrame sendMessage
+INFOS: ClientFrame::sendMessage writing out: GFDGDFF
+mai 22, 2018 12:03:30 AM widgets.ClientFrame2$SendMessageAction actionPerformed
+INFOS: Sent message = GFDGDFF
+mai 22, 2018 12:03:33 AM widgets.ClientFrame2$FilterMessagesAction actionPerformed
+INFOS: Filtering is On
+mai 22, 2018 12:03:46 AM widgets.ClientFrame2$ClearMessagesAction actionPerformed
+INFOS: Clear document
+mai 22, 2018 12:03:46 AM widgets.ClientFrame2$FilterMessagesAction actionPerformed
+INFOS: Filtering is On
+mai 22, 2018 12:03:51 AM widgets.ClientFrame2$FilterMessagesAction actionPerformed
+INFOS: Filtering is On
+mai 22, 2018 12:03:56 AM widgets.AbstractClientFrame sendMessage
+INFOS: ClientFrame::sendMessage writing out: tteqtdtgfst
+mai 22, 2018 12:03:56 AM widgets.ClientFrame2$SendMessageAction actionPerformed
+INFOS: Sent message = tteqtdtgfst
+mai 22, 2018 12:04:06 AM widgets.AbstractClientFrame sendMessage
+INFOS: ClientFrame::sendMessage writing out: tretrzetreter
+mai 22, 2018 12:04:06 AM widgets.ClientFrame2$SendMessageAction actionPerformed
+INFOS: Sent message = tretrzetreter
+mai 22, 2018 12:04:09 AM widgets.ClientFrame2$FilterMessagesAction actionPerformed
+INFOS: Filtering is On
+mai 22, 2018 12:04:25 AM widgets.ClientFrame2$FrameWindowListener windowClosing
+INFOS: FrameWindowListener::windowClosing: sending bye ... 
+mai 22, 2018 12:04:25 AM widgets.ClientFrame2$QuitAction actionPerformed
+INFOS: QuitAction: sending bye ... 
+mai 22, 2018 12:04:29 AM widgets.ClientFrame2$FrameWindowListener windowClosing
+INFOS: FrameWindowListener::windowClosing: sending bye ... 
+mai 22, 2018 12:04:29 AM widgets.ClientFrame2$QuitAction actionPerformed
+INFOS: QuitAction: sending bye ... 

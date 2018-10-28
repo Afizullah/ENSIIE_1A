@@ -1,0 +1,54 @@
+mai 22, 2018 12:02:55 AM logger.LoggerFactory getLogger
+INFOS: log file created
+mai 22, 2018 12:02:55 AM logger.LoggerFactory getLogger
+INFOS: Logger ready
+mai 22, 2018 12:02:55 AM RunChatServer launch
+INFOS: Creating server on port 1394 with timeout 5000 ms and verbose off
+mai 22, 2018 12:02:55 AM logger.LoggerFactory getLogger
+INFOS: Logger ready
+mai 22, 2018 12:02:55 AM chat.server.ChatServer <init>
+INFOS: ChatServer::ChatServer(port = 1394, timeout = 5000, quit = true)
+mai 22, 2018 12:02:55 AM RunChatServer launch
+INFOS: Waiting for server to terminate ... 
+mai 22, 2018 12:03:05 AM chat.server.ChatServer run
+INFOS: ChatServer: Creatingc client input stream to get client's name ... 
+mai 22, 2018 12:03:05 AM chat.server.ChatServer run
+INFOS: ChatServer: reading client's name: 
+mai 22, 2018 12:03:05 AM chat.server.ChatServer run
+INFOS: ChatServer: client name Zebulon
+mai 22, 2018 12:03:05 AM logger.LoggerFactory getLogger
+INFOS: Logger ready
+mai 22, 2018 12:03:05 AM chat.server.InputClient <init>
+INFOS: InputClient: Creating Input Stream ... 
+mai 22, 2018 12:03:05 AM chat.server.InputOutputClient <init>
+INFOS: Client: Creating Output Stream ... 
+mai 22, 2018 12:03:05 AM logger.LoggerFactory getLogger
+INFOS: Logger ready
+mai 22, 2018 12:03:05 AM chat.server.ChatServer run
+INFOS: ChatServer: Creatingc client input stream to get client's name ... 
+mai 22, 2018 12:03:05 AM chat.server.ChatServer run
+INFOS: ChatServer: reading client's name: 
+mai 22, 2018 12:03:05 AM chat.server.ChatServer run
+INFOS: ChatServer: client name Ténéphore
+mai 22, 2018 12:03:05 AM logger.LoggerFactory getLogger
+INFOS: Logger ready
+mai 22, 2018 12:03:05 AM chat.server.InputClient <init>
+INFOS: InputClient: Creating Input Stream ... 
+mai 22, 2018 12:03:05 AM chat.server.InputOutputClient <init>
+INFOS: Client: Creating Output Stream ... 
+mai 22, 2018 12:03:05 AM logger.LoggerFactory getLogger
+INFOS: Logger ready
+mai 22, 2018 12:03:06 AM chat.server.ChatServer run
+INFOS: ChatServer: Creatingc client input stream to get client's name ... 
+mai 22, 2018 12:03:06 AM chat.server.ChatServer run
+INFOS: ChatServer: reading client's name: 
+mai 22, 2018 12:03:06 AM chat.server.ChatServer run
+INFOS: ChatServer: client name Anatole
+mai 22, 2018 12:03:06 AM logger.LoggerFactory getLogger
+INFOS: Logger ready
+mai 22, 2018 12:03:06 AM chat.server.InputClient <init>
+INFOS: InputClient: Creating Input Stream ... 
+mai 22, 2018 12:03:06 AM chat.server.InputOutputClient <init>
+INFOS: Client: Creating Output Stream ... 
+mai 22, 2018 12:03:06 AM logger.LoggerFactory getLogger
+INFOS: Logger ready
