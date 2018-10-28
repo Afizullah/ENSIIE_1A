@@ -1,0 +1,185 @@
+\hypertarget{tuile_8h}{}\section{/home/rpereira/\+Honshu/includes/tuile.h File Reference}
+\label{tuile_8h}\index{/home/rpereira/\+Honshu/includes/tuile.\+h@{/home/rpereira/\+Honshu/includes/tuile.\+h}}
+
+
+fonction sur les tuiles  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}case.\+h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structs__tuile}{s\+\_\+tuile}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{tuile_8h_a7ebbf565d25eb211605717b4d107e345}{T\+U\+I\+L\+E\+\_\+\+S\+U\+R\+\_\+\+G\+R\+I\+L\+LE}~(1 $<$$<$ 0)
+\item 
+\#define \hyperlink{tuile_8h_a8479903b14306481c0a393b0daddf457}{T\+U\+I\+L\+E\+\_\+\+O\+R\+I\+G\+I\+NE}~(1 $<$$<$ 1)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structs__tuile}{s\+\_\+tuile} {\bfseries t\+\_\+tuile}\hypertarget{tuile_8h_ad940cc1c2042d6841abfa0e04b79e6fc}{}\label{tuile_8h_ad940cc1c2042d6841abfa0e04b79e6fc}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{tuile_8h_a1fe4cded84ddee1e53a7d351ee0ef77f}{e\+\_\+rotations} \{ \\*
+\hyperlink{tuile_8h_a1fe4cded84ddee1e53a7d351ee0ef77faa1f529db9f2d334d9c41dcc5f6f6e2a7}{N\+O\+RD}, 
+\\*
+\hyperlink{tuile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fab26f94a551dbfca6e0f4f6b5ad145c01}{E\+ST}, 
+\\*
+\hyperlink{tuile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fad2d3ceab3fce63bbe07882ab5a4e991e}{S\+UD}, 
+\\*
+\hyperlink{tuile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fa564dddee8796eda21f35c76cb586aeb6}{O\+U\+E\+ST}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{tuile_8h_af6122ba4c1108e41a7f54905a8645be9}{tuile\+\_\+init} (\hyperlink{structs__tuile}{t\+\_\+tuile} $\ast$tuile)
+\begin{DoxyCompactList}\small\item\em Initialise la tuile. \end{DoxyCompactList}\item 
+int \hyperlink{tuile_8h_afcafb316ecb505d32de06c560f7b57b6}{tuile\+\_\+set\+\_\+case} (\hyperlink{structs__tuile}{t\+\_\+tuile} $\ast$tuile, t\+\_\+case\+\_\+type t, \hyperlink{types_8h_aec93e83855ac17c3c25c55c37ca186dd}{B\+Y\+TE} index)
+\begin{DoxyCompactList}\small\item\em met une case de la tuile à un état (P/\+F/\+L/\+V/\+R/\+U/\+Max) \end{DoxyCompactList}\item 
+void \hyperlink{tuile_8h_a59485e6fd3f9d1e4a3bd2128e5248ae4}{tuile\+\_\+rotation} (\hyperlink{structs__tuile}{t\+\_\+tuile} $\ast$tuile)
+\begin{DoxyCompactList}\small\item\em effectue la rotation d\textquotesingle{}une tuile \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{types_8h_aec93e83855ac17c3c25c55c37ca186dd}{B\+Y\+TE} \hyperlink{tuile_8h_a4248be19489376c59dd8e5d1f9b63a4d}{D\+E\+C\+A\+L\+A\+GE} \mbox{[}4\mbox{]}\mbox{[}6\mbox{]}\mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+fonction sur les tuiles 
+
+\begin{DoxyAuthor}{Authors}
+Romain P\+E\+R\+E\+I\+RA, Douha O\+U\+R\+I\+MI, Afizullah R\+A\+H\+M\+A\+NY, Guang\+Yue C\+H\+EN 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\index{tuile.\+h@{tuile.\+h}!T\+U\+I\+L\+E\+\_\+\+O\+R\+I\+G\+I\+NE@{T\+U\+I\+L\+E\+\_\+\+O\+R\+I\+G\+I\+NE}}
+\index{T\+U\+I\+L\+E\+\_\+\+O\+R\+I\+G\+I\+NE@{T\+U\+I\+L\+E\+\_\+\+O\+R\+I\+G\+I\+NE}!tuile.\+h@{tuile.\+h}}
+\subsubsection[{\texorpdfstring{T\+U\+I\+L\+E\+\_\+\+O\+R\+I\+G\+I\+NE}{TUILE_ORIGINE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+U\+I\+L\+E\+\_\+\+O\+R\+I\+G\+I\+NE~(1 $<$$<$ 1)}\hypertarget{tuile_8h_a8479903b14306481c0a393b0daddf457}{}\label{tuile_8h_a8479903b14306481c0a393b0daddf457}
+un état précisant que cette tuile est la 1ere inséré au centre de la grille \index{tuile.\+h@{tuile.\+h}!T\+U\+I\+L\+E\+\_\+\+S\+U\+R\+\_\+\+G\+R\+I\+L\+LE@{T\+U\+I\+L\+E\+\_\+\+S\+U\+R\+\_\+\+G\+R\+I\+L\+LE}}
+\index{T\+U\+I\+L\+E\+\_\+\+S\+U\+R\+\_\+\+G\+R\+I\+L\+LE@{T\+U\+I\+L\+E\+\_\+\+S\+U\+R\+\_\+\+G\+R\+I\+L\+LE}!tuile.\+h@{tuile.\+h}}
+\subsubsection[{\texorpdfstring{T\+U\+I\+L\+E\+\_\+\+S\+U\+R\+\_\+\+G\+R\+I\+L\+LE}{TUILE_SUR_GRILLE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+U\+I\+L\+E\+\_\+\+S\+U\+R\+\_\+\+G\+R\+I\+L\+LE~(1 $<$$<$ 0)}\hypertarget{tuile_8h_a7ebbf565d25eb211605717b4d107e345}{}\label{tuile_8h_a7ebbf565d25eb211605717b4d107e345}
+un état précisant si la tuile est sur la carte 
+
+\subsection{Enumeration Type Documentation}
+\index{tuile.\+h@{tuile.\+h}!e\+\_\+rotations@{e\+\_\+rotations}}
+\index{e\+\_\+rotations@{e\+\_\+rotations}!tuile.\+h@{tuile.\+h}}
+\subsubsection[{\texorpdfstring{e\+\_\+rotations}{e_rotations}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf e\+\_\+rotations}}\hypertarget{tuile_8h_a1fe4cded84ddee1e53a7d351ee0ef77f}{}\label{tuile_8h_a1fe4cded84ddee1e53a7d351ee0ef77f}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+O\+RD@{N\+O\+RD}!tuile.\+h@{tuile.\+h}}\index{tuile.\+h@{tuile.\+h}!N\+O\+RD@{N\+O\+RD}}\item[{\em 
+N\+O\+RD\hypertarget{tuile_8h_a1fe4cded84ddee1e53a7d351ee0ef77faa1f529db9f2d334d9c41dcc5f6f6e2a7}{}\label{tuile_8h_a1fe4cded84ddee1e53a7d351ee0ef77faa1f529db9f2d334d9c41dcc5f6f6e2a7}
+}]0 1
+
+2 3
+
+4 5 \index{E\+ST@{E\+ST}!tuile.\+h@{tuile.\+h}}\index{tuile.\+h@{tuile.\+h}!E\+ST@{E\+ST}}\item[{\em 
+E\+ST\hypertarget{tuile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fab26f94a551dbfca6e0f4f6b5ad145c01}{}\label{tuile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fab26f94a551dbfca6e0f4f6b5ad145c01}
+}]4 2 0
+
+5 3 1 \index{S\+UD@{S\+UD}!tuile.\+h@{tuile.\+h}}\index{tuile.\+h@{tuile.\+h}!S\+UD@{S\+UD}}\item[{\em 
+S\+UD\hypertarget{tuile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fad2d3ceab3fce63bbe07882ab5a4e991e}{}\label{tuile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fad2d3ceab3fce63bbe07882ab5a4e991e}
+}]5 4
+
+3 2
+
+1 0 \index{O\+U\+E\+ST@{O\+U\+E\+ST}!tuile.\+h@{tuile.\+h}}\index{tuile.\+h@{tuile.\+h}!O\+U\+E\+ST@{O\+U\+E\+ST}}\item[{\em 
+O\+U\+E\+ST\hypertarget{tuile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fa564dddee8796eda21f35c76cb586aeb6}{}\label{tuile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fa564dddee8796eda21f35c76cb586aeb6}
+}]1 3 5
+
+0 2 4 \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{tuile.\+h@{tuile.\+h}!tuile\+\_\+init@{tuile\+\_\+init}}
+\index{tuile\+\_\+init@{tuile\+\_\+init}!tuile.\+h@{tuile.\+h}}
+\subsubsection[{\texorpdfstring{tuile\+\_\+init(t\+\_\+tuile $\ast$tuile)}{tuile_init(t_tuile *tuile)}}]{\setlength{\rightskip}{0pt plus 5cm}void tuile\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+tuile} $\ast$}]{tuile}
+\end{DoxyParamCaption}
+)}\hypertarget{tuile_8h_af6122ba4c1108e41a7f54905a8645be9}{}\label{tuile_8h_af6122ba4c1108e41a7f54905a8645be9}
+
+
+Initialise la tuile. 
+
+\begin{DoxyAttention}{Attention}
+\+: les cases sont initialisées à l\textquotesingle{}état \textquotesingle{}T\+Y\+P\+E\+\_\+\+M\+AX\textquotesingle{} il faudra \textquotesingle{}tuile\+\_\+set\+\_\+case\textquotesingle{} pour déterminer le type de case explcitement 
+\end{DoxyAttention}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{tuile_8h_afcafb316ecb505d32de06c560f7b57b6}{tuile\+\_\+set\+\_\+case} 
+\end{DoxySeeAlso}
+\index{tuile.\+h@{tuile.\+h}!tuile\+\_\+rotation@{tuile\+\_\+rotation}}
+\index{tuile\+\_\+rotation@{tuile\+\_\+rotation}!tuile.\+h@{tuile.\+h}}
+\subsubsection[{\texorpdfstring{tuile\+\_\+rotation(t\+\_\+tuile $\ast$tuile)}{tuile_rotation(t_tuile *tuile)}}]{\setlength{\rightskip}{0pt plus 5cm}void tuile\+\_\+rotation (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+tuile} $\ast$}]{tuile}
+\end{DoxyParamCaption}
+)}\hypertarget{tuile_8h_a59485e6fd3f9d1e4a3bd2128e5248ae4}{}\label{tuile_8h_a59485e6fd3f9d1e4a3bd2128e5248ae4}
+
+
+effectue la rotation d\textquotesingle{}une tuile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tuile} & \+: la tuile qui subit la rotation \\
+\hline
+\end{DoxyParams}
+\index{tuile.\+h@{tuile.\+h}!tuile\+\_\+set\+\_\+case@{tuile\+\_\+set\+\_\+case}}
+\index{tuile\+\_\+set\+\_\+case@{tuile\+\_\+set\+\_\+case}!tuile.\+h@{tuile.\+h}}
+\subsubsection[{\texorpdfstring{tuile\+\_\+set\+\_\+case(t\+\_\+tuile $\ast$tuile, t\+\_\+case\+\_\+type t, B\+Y\+T\+E index)}{tuile_set_case(t_tuile *tuile, t_case_type t, BYTE index)}}]{\setlength{\rightskip}{0pt plus 5cm}int tuile\+\_\+set\+\_\+case (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+tuile} $\ast$}]{tuile, }
+\item[{t\+\_\+case\+\_\+type}]{t, }
+\item[{{\bf B\+Y\+TE}}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{tuile_8h_afcafb316ecb505d32de06c560f7b57b6}{}\label{tuile_8h_afcafb316ecb505d32de06c560f7b57b6}
+
+
+met une case de la tuile à un état (P/\+F/\+L/\+V/\+R/\+U/\+Max) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tuile} & \+: une tuile \\
+\hline
+{\em t} & \+: le type de case a définir \\
+\hline
+{\em index} & \+: l\textquotesingle{}index de la case sur la tuile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si la case a été modifié, 0 sinon
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em tuile} & \+: une tuile \\
+\hline
+{\em t} & \+: le type de case à définir \\
+\hline
+{\em index} & \+: l\textquotesingle{}index de la case sur la tuile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si la case a été modifié, 0 sinon 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\index{tuile.\+h@{tuile.\+h}!D\+E\+C\+A\+L\+A\+GE@{D\+E\+C\+A\+L\+A\+GE}}
+\index{D\+E\+C\+A\+L\+A\+GE@{D\+E\+C\+A\+L\+A\+GE}!tuile.\+h@{tuile.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+C\+A\+L\+A\+GE}{DECALAGE}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+Y\+TE} D\+E\+C\+A\+L\+A\+GE\mbox{[}4\mbox{]}\mbox{[}6\mbox{]}\mbox{[}2\mbox{]}}\hypertarget{tuile_8h_a4248be19489376c59dd8e5d1f9b63a4d}{}\label{tuile_8h_a4248be19489376c59dd8e5d1f9b63a4d}
+Les décalages des cases relativement à l\textquotesingle{}origine de la tuile, selon sa rotation. e.\+g\+: D\+E\+C\+A\+L\+A\+GE\mbox{[}N\+O\+R\+TH\mbox{]}\mbox{[}0\mbox{]} == (0, 0) D\+E\+C\+A\+L\+A\+GE\mbox{[}N\+O\+R\+TH\mbox{]}\mbox{[}1\mbox{]} == (1, 0)
+
+La position des cases sur une tuile, en fonction de son orientation et par rapport à son origine (case \textquotesingle{}en haut à gauche\textquotesingle{}) ex\+: D\+E\+C\+A\+L\+A\+GE\mbox{[}N\+O\+RD\mbox{]}\mbox{[}0\mbox{]} == (0, 0) D\+E\+C\+A\+L\+A\+GE\mbox{[}N\+O\+RD\mbox{]}\mbox{[}1\mbox{]} == (1, 0) 

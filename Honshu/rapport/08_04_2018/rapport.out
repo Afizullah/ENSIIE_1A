@@ -1,0 +1,10 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Rapport lot B}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Interfaces 'affichage.h' et 'entree.h'}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{1\350re impl\351mentation}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Partie affichage}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Partie entr\351e}{subsection.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.3}{2\350me impl\351mentation avec ncurses}{section.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Partie affichage}{subsection.2.3}% 8
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Partie entr\351e}{subsection.2.3}% 9
+\BOOKMARK [1][-]{section.3}{Conclusion}{}% 10

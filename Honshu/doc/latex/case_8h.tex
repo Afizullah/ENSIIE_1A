@@ -1,0 +1,169 @@
+\hypertarget{case_8h}{}\section{/home/rpereira/\+Honshu/includes/case.h File Reference}
+\label{case_8h}\index{/home/rpereira/\+Honshu/includes/case.\+h@{/home/rpereira/\+Honshu/includes/case.\+h}}
+
+
+Fonctions sur les cases.  
+
+
+{\ttfamily \#include \char`\"{}honshu.\+h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structs__case}{s\+\_\+case}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{case_8h_a5ebd6bfab94e92f3702a0cfa98f1b9c0}{C\+A\+S\+E\+\_\+\+V\+I\+S\+I\+T\+ED}~(1 $<$$<$ 0)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum e\+\_\+case\+\_\+type {\bfseries t\+\_\+case\+\_\+type}\hypertarget{case_8h_ad49addac0a1c24e762ba83ebfc16287a}{}\label{case_8h_ad49addac0a1c24e762ba83ebfc16287a}
+
+\item 
+typedef struct \hyperlink{structs__case}{s\+\_\+case} {\bfseries t\+\_\+case}\hypertarget{case_8h_a3abded76836ddbd97c57a210826b7988}{}\label{case_8h_a3abded76836ddbd97c57a210826b7988}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries e\+\_\+case\+\_\+type} \{ \\*
+{\bfseries T\+Y\+P\+E\+\_\+\+P\+L\+A\+I\+NE}, 
+\\*
+{\bfseries T\+Y\+P\+E\+\_\+\+F\+O\+R\+ET}, 
+\\*
+{\bfseries T\+Y\+P\+E\+\_\+\+L\+AC}, 
+\\*
+{\bfseries T\+Y\+P\+E\+\_\+\+V\+I\+L\+LE}, 
+\\*
+{\bfseries T\+Y\+P\+E\+\_\+\+R\+E\+S\+S\+O\+U\+R\+CE}, 
+\\*
+{\bfseries T\+Y\+P\+E\+\_\+\+U\+S\+I\+NE}, 
+\\*
+{\bfseries T\+Y\+P\+E\+\_\+\+M\+AX}
+ \}\hypertarget{case_8h_a96a7bbab6106178f277b76798ed51ede}{}\label{case_8h_a96a7bbab6106178f277b76798ed51ede}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{case_8h_a860ebfecf6d74812a5375ad4496dc2ef}{case\+\_\+init} (\hyperlink{structs__case}{t\+\_\+case} $\ast$caze, \hyperlink{structs__tuile}{t\+\_\+tuile} $\ast$tuile, \hyperlink{types_8h_aec93e83855ac17c3c25c55c37ca186dd}{B\+Y\+TE} type)
+\begin{DoxyCompactList}\small\item\em initialise une case \end{DoxyCompactList}\item 
+enum e\+\_\+case\+\_\+type \hyperlink{case_8h_ab6b01f885396bc3a5e2e12219f861001}{case\+\_\+type} (char char\+ID)
+\begin{DoxyCompactList}\small\item\em renvoie le type associé à un caractère \end{DoxyCompactList}\item 
+char \hyperlink{case_8h_a428dff4871e21a96f86535b817b1e740}{case\+\_\+char} (t\+\_\+case\+\_\+type type)
+\begin{DoxyCompactList}\small\item\em renvoie le caractère associé à un type de case \end{DoxyCompactList}\item 
+void \hyperlink{case_8h_a9c48c01fe248117326742e9f6d9f2c3e}{case\+\_\+set} (\hyperlink{structs__case}{t\+\_\+case} $\ast$caze, \hyperlink{types_8h_aec93e83855ac17c3c25c55c37ca186dd}{B\+Y\+TE} type)
+\begin{DoxyCompactList}\small\item\em définit le type d\textquotesingle{}une face \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fonctions sur les cases. 
+
+\begin{DoxyAuthor}{Authors}
+Romain P\+E\+R\+E\+I\+RA, Douha O\+U\+R\+I\+MI, Afizullah R\+A\+H\+M\+A\+NY, Guang\+Yue C\+H\+EN 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\index{case.\+h@{case.\+h}!C\+A\+S\+E\+\_\+\+V\+I\+S\+I\+T\+ED@{C\+A\+S\+E\+\_\+\+V\+I\+S\+I\+T\+ED}}
+\index{C\+A\+S\+E\+\_\+\+V\+I\+S\+I\+T\+ED@{C\+A\+S\+E\+\_\+\+V\+I\+S\+I\+T\+ED}!case.\+h@{case.\+h}}
+\subsubsection[{\texorpdfstring{C\+A\+S\+E\+\_\+\+V\+I\+S\+I\+T\+ED}{CASE_VISITED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+A\+S\+E\+\_\+\+V\+I\+S\+I\+T\+ED~(1 $<$$<$ 0)}\hypertarget{case_8h_a5ebd6bfab94e92f3702a0cfa98f1b9c0}{}\label{case_8h_a5ebd6bfab94e92f3702a0cfa98f1b9c0}
+Flag indiquant si la case a déjà été visité lors du parcours en largeur pour le comptage des points villages. 
+
+\subsection{Function Documentation}
+\index{case.\+h@{case.\+h}!case\+\_\+char@{case\+\_\+char}}
+\index{case\+\_\+char@{case\+\_\+char}!case.\+h@{case.\+h}}
+\subsubsection[{\texorpdfstring{case\+\_\+char(t\+\_\+case\+\_\+type type)}{case_char(t_case_type type)}}]{\setlength{\rightskip}{0pt plus 5cm}char case\+\_\+char (
+\begin{DoxyParamCaption}
+\item[{t\+\_\+case\+\_\+type}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{case_8h_a428dff4871e21a96f86535b817b1e740}{}\label{case_8h_a428dff4871e21a96f86535b817b1e740}
+
+
+renvoie le caractère associé à un type de case 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \+: une type de case \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le caractère associé 
+\end{DoxyReturn}
+\index{case.\+h@{case.\+h}!case\+\_\+init@{case\+\_\+init}}
+\index{case\+\_\+init@{case\+\_\+init}!case.\+h@{case.\+h}}
+\subsubsection[{\texorpdfstring{case\+\_\+init(t\+\_\+case $\ast$caze, t\+\_\+tuile $\ast$tuile, B\+Y\+T\+E type)}{case_init(t_case *caze, t_tuile *tuile, BYTE type)}}]{\setlength{\rightskip}{0pt plus 5cm}void case\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+case} $\ast$}]{caze, }
+\item[{{\bf t\+\_\+tuile} $\ast$}]{tuile, }
+\item[{{\bf B\+Y\+TE}}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{case_8h_a860ebfecf6d74812a5375ad4496dc2ef}{}\label{case_8h_a860ebfecf6d74812a5375ad4496dc2ef}
+
+
+initialise une case 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caze} & \+: la case en instance \\
+\hline
+{\em tuile} & \+: la tuile parent de cette case \\
+\hline
+{\em type} & \+: \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+enum e\+\_\+case\+\_\+type
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em caze} & \+: la case \\
+\hline
+{\em tuile} & \+: la tuile parente de cette case. \\
+\hline
+{\em type} & \+: \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+enum e\+\_\+cases 
+\end{DoxySeeAlso}
+\index{case.\+h@{case.\+h}!case\+\_\+set@{case\+\_\+set}}
+\index{case\+\_\+set@{case\+\_\+set}!case.\+h@{case.\+h}}
+\subsubsection[{\texorpdfstring{case\+\_\+set(t\+\_\+case $\ast$caze, B\+Y\+T\+E type)}{case_set(t_case *caze, BYTE type)}}]{\setlength{\rightskip}{0pt plus 5cm}void case\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+case} $\ast$}]{caze, }
+\item[{{\bf B\+Y\+TE}}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{case_8h_a9c48c01fe248117326742e9f6d9f2c3e}{}\label{case_8h_a9c48c01fe248117326742e9f6d9f2c3e}
+
+
+définit le type d\textquotesingle{}une face 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caze} & \+: une case \\
+\hline
+{\em type} & \+: le type \\
+\hline
+\end{DoxyParams}
+\index{case.\+h@{case.\+h}!case\+\_\+type@{case\+\_\+type}}
+\index{case\+\_\+type@{case\+\_\+type}!case.\+h@{case.\+h}}
+\subsubsection[{\texorpdfstring{case\+\_\+type(char char\+I\+D)}{case_type(char charID)}}]{\setlength{\rightskip}{0pt plus 5cm}enum e\+\_\+case\+\_\+type case\+\_\+type (
+\begin{DoxyParamCaption}
+\item[{char}]{char\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{case_8h_ab6b01f885396bc3a5e2e12219f861001}{}\label{case_8h_ab6b01f885396bc3a5e2e12219f861001}
+
+
+renvoie le type associé à un caractère 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char\+ID} & \+: le caractère \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le type associé au caractère 
+\end{DoxyReturn}

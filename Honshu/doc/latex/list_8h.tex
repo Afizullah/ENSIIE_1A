@@ -1,0 +1,486 @@
+\hypertarget{list_8h}{}\section{/home/rpereira/\+Honshu/includes/list.h File Reference}
+\label{list_8h}\index{/home/rpereira/\+Honshu/includes/list.\+h@{/home/rpereira/\+Honshu/includes/list.\+h}}
+
+
+Listes doublement chainées circulaire.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structs__list__node}{s\+\_\+list\+\_\+node}
+\item 
+struct \hyperlink{structs__list}{s\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{list_8h_a16066bb2690e6516320ca0ea4a14dce4}{L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+RT}(L,  T,  V)
+\item 
+\#define {\bfseries L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+OP}(L,  T,  V)
+\item 
+\#define \hyperlink{list_8h_a205c13dbe6683348b7cb4eb9dae5b20c}{L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+P\+OP}(L,  T,  V)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structs__list__node}{s\+\_\+list\+\_\+node} {\bfseries t\+\_\+list\+\_\+node}\hypertarget{list_8h_a5d359b7f5fb0353fa6686b309c4000ac}{}\label{list_8h_a5d359b7f5fb0353fa6686b309c4000ac}
+
+\item 
+typedef struct \hyperlink{structs__list}{s\+\_\+list} {\bfseries t\+\_\+list}\hypertarget{list_8h_a7fc587248896efbe3e399a8a7a2f77df}{}\label{list_8h_a7fc587248896efbe3e399a8a7a2f77df}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{list_8h_a0e48509d17e5a8ccd64b86448d8dce60}{list\+\_\+node\+\_\+data} (\hyperlink{structs__list__node}{t\+\_\+list\+\_\+node} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Recuperes la donnée sur un sommet. \end{DoxyCompactList}\item 
+\hyperlink{structs__list}{t\+\_\+list} $\ast$ \hyperlink{list_8h_a5ed6c55f949d2bf6949bdaf117e2e7c7}{list\+\_\+new} (void)
+\begin{DoxyCompactList}\small\item\em crée une nouvelle liste doublent chainée circulaire \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{list_8h_abe7d13afafb4bc1c5a807b176fdf84bd}{list\+\_\+add\+\_\+head} (\hyperlink{structs__list}{t\+\_\+list} $\ast$lst, void const $\ast$content, unsigned int content\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Ajoutes un élement en tête de liste. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{list_8h_a5041ef68b16f9c61bf62871ff6f7bd17}{list\+\_\+add\+\_\+tail} (\hyperlink{structs__list}{t\+\_\+list} $\ast$lst, void const $\ast$content, unsigned int content\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Ajoutes un élement en in liste. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{list_8h_ac120f163094e1cdfb8b2a13a5694d3d1}{list\+\_\+get\+\_\+head} (\hyperlink{structs__list}{t\+\_\+list} $\ast$lst)
+\begin{DoxyCompactList}\small\item\em Recuperes la donnée en tête de liste. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{list_8h_a344922a08d76525305ac20ad3882c7d6}{list\+\_\+get\+\_\+tail} (\hyperlink{structs__list}{t\+\_\+list} $\ast$lst)
+\begin{DoxyCompactList}\small\item\em Recuperes la donnée en fin de liste. \end{DoxyCompactList}\item 
+void \hyperlink{list_8h_ab6bd52b92f546ffd6a05d7f4b35f578f}{list\+\_\+remove\+\_\+node} (\hyperlink{structs__list}{t\+\_\+list} $\ast$lst, \hyperlink{structs__list__node}{t\+\_\+list\+\_\+node} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Supprimes un sommet de la liste. \end{DoxyCompactList}\item 
+int \hyperlink{list_8h_a001a1ab7bbe7dae4815a53666e3e546c}{list\+\_\+remove\+\_\+head} (\hyperlink{structs__list}{t\+\_\+list} $\ast$lst)
+\begin{DoxyCompactList}\small\item\em Supprimes l\textquotesingle{}élément en tête de liste. \end{DoxyCompactList}\item 
+int \hyperlink{list_8h_adbb3b2b5e947aee132fa1cba3f32bff4}{list\+\_\+remove\+\_\+tail} (\hyperlink{structs__list}{t\+\_\+list} $\ast$lst)
+\begin{DoxyCompactList}\small\item\em Supprimes l\textquotesingle{}élément en fin de liste. \end{DoxyCompactList}\item 
+void \hyperlink{list_8h_a8435bec3495ee4b604c2aec457ea4291}{list\+\_\+map} (\hyperlink{structs__list}{t\+\_\+list} $\ast$lst, void($\ast$f)(void const $\ast$value))
+\begin{DoxyCompactList}\small\item\em Appliques une fonction sur chaque donnée de la liste. \end{DoxyCompactList}\item 
+void \hyperlink{list_8h_a8203eb5adb7aa74096e7c524911d2350}{list\+\_\+clear} (\hyperlink{structs__list}{t\+\_\+list} $\ast$lst)
+\begin{DoxyCompactList}\small\item\em Supprimes tous les éléments de la liste. \end{DoxyCompactList}\item 
+void \hyperlink{list_8h_a0cc717364da33b603e3cc481f6e7545d}{list\+\_\+delete} (\hyperlink{structs__list}{t\+\_\+list} $\ast$lst)
+\begin{DoxyCompactList}\small\item\em Libères la mémoire dedié à la liste. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Listes doublement chainées circulaire. 
+
+\begin{DoxyAuthor}{Authors}
+Romain P\+E\+R\+E\+I\+RA, Douha O\+U\+R\+I\+MI, Afizullah R\+A\+H\+M\+A\+NY, Guang\+Yue C\+H\+EN Data structure \+: liste doublement chainée circulaire (Peut être utilisé comme des listes/files/piles sans pertes de performances) 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\index{list.\+h@{list.\+h}!L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+P\+OP@{L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+P\+OP}}
+\index{L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+P\+OP@{L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+P\+OP}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+P\+OP}{LIST_ITERATE_POP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+P\+OP(
+\begin{DoxyParamCaption}
+\item[{}]{L, }
+\item[{}]{T, }
+\item[{}]{V}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a205c13dbe6683348b7cb4eb9dae5b20c}{}\label{list_8h_a205c13dbe6683348b7cb4eb9dae5b20c}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+                t\_list\_node * \_\_next = \_\_node->next;\hyperlink{list_8h_ab6bd52b92f546ffd6a05d7f4b35f578f}{\(\backslash\)}
+\hyperlink{list_8h_ab6bd52b92f546ffd6a05d7f4b35f578f}{                list\_remove\_node}(L, \_\_node);\(\backslash\)
+                \_\_node = \_\_next;\(\backslash\)
+                continue ; \(\backslash\)
+            \}
+\end{DoxyCode}
+Une macro qui peut être appelé lorsqu\textquotesingle{}on itére dans une liste (entre 2 macro \textquotesingle{}L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+RT\textquotesingle{} et \textquotesingle{}L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+OP\textquotesingle{}), pour supprimer de la liste le sommet courant. (opération en O(1)) \index{list.\+h@{list.\+h}!L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+RT@{L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+RT}}
+\index{L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+RT@{L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+RT}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+RT}{LIST_ITERATE_START}}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+RT(
+\begin{DoxyParamCaption}
+\item[{}]{L, }
+\item[{}]{T, }
+\item[{}]{V}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a16066bb2690e6516320ca0ea4a14dce4}{}\label{list_8h_a16066bb2690e6516320ca0ea4a14dce4}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (L != NULL) \{\(\backslash\)
+        t\_list\_node * \_\_node = L->main->next;\(\backslash\)
+        while (\_\_node != L->main) \{\(\backslash\)
+            T V = (T)(\_\_node + 1);
+\end{DoxyCode}
+Une macro pour itérer dans la liste
+
+exemple\+:
+
+t\+\_\+list $\ast$ lst = \hyperlink{list_8h_a5ed6c55f949d2bf6949bdaf117e2e7c7}{list\+\_\+new()}; list\+\_\+add(lst, \char`\"{}hello\char`\"{}, strlen(\char`\"{}hello\char`\"{})); list\+\_\+add(lst, \char`\"{}world\char`\"{}, strlen(\char`\"{}world\char`\"{})); list\+\_\+add(lst, \char`\"{}\+I am toss\char`\"{}, strlen(\char`\"{}\+I am toss\char`\"{}));
+
+\hyperlink{list_8h_a16066bb2690e6516320ca0ea4a14dce4}{L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+R\+T(lst, char $\ast$, string)} \{ printf(\char`\"{}\%s\textbackslash{}n\char`\"{}, string); \} L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+O\+P(lst, char $\ast$, string); \index{list.\+h@{list.\+h}!L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+OP@{L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+OP}}
+\index{L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+OP@{L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+OP}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+OP}{LIST_ITERATE_STOP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+I\+S\+T\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+OP(
+\begin{DoxyParamCaption}
+\item[{}]{L, }
+\item[{}]{T, }
+\item[{}]{V}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a4bfc56dcf50e4c0cd6f3bc18a4da43be}{}\label{list_8h_a4bfc56dcf50e4c0cd6f3bc18a4da43be}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\_\_node = \_\_node->next;\(\backslash\)
+        \}\(\backslash\)
+    \}
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\index{list.\+h@{list.\+h}!list\+\_\+add\+\_\+head@{list\+\_\+add\+\_\+head}}
+\index{list\+\_\+add\+\_\+head@{list\+\_\+add\+\_\+head}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+add\+\_\+head(t\+\_\+list $\ast$lst, void const $\ast$content, unsigned int content\+\_\+size)}{list_add_head(t_list *lst, void const *content, unsigned int content_size)}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ list\+\_\+add\+\_\+head (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+list} $\ast$}]{lst, }
+\item[{void const $\ast$}]{content, }
+\item[{unsigned int}]{content\+\_\+size}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_abe7d13afafb4bc1c5a807b176fdf84bd}{}\label{list_8h_abe7d13afafb4bc1c5a807b176fdf84bd}
+
+
+Ajoutes un élement en tête de liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+{\em content} & \+: la donnée à ajouter \\
+\hline
+{\em content\+\_\+size} & \+: la taille de la donnée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: l\textquotesingle{}adresse où la donnée a été copié
+\end{DoxyReturn}
+Ajoutes un élement en tête de liste.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+{\em content} & \+: la donnée à ajouter \\
+\hline
+{\em content\+\_\+size} & \+: la taille de la donnée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: l\textquotesingle{}adresse où la donnée a été copiée 
+\end{DoxyReturn}
+head $<$-\/$>$ tmp $<$-\/$>$ ...
+
+head -\/$>$ node $<$-\/ tmp $<$-\/$>$ ...
+
+head $<$-\/$>$ node $<$-\/$>$ tmp $<$-\/$>$ ... \index{list.\+h@{list.\+h}!list\+\_\+add\+\_\+tail@{list\+\_\+add\+\_\+tail}}
+\index{list\+\_\+add\+\_\+tail@{list\+\_\+add\+\_\+tail}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+add\+\_\+tail(t\+\_\+list $\ast$lst, void const $\ast$content, unsigned int content\+\_\+size)}{list_add_tail(t_list *lst, void const *content, unsigned int content_size)}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ list\+\_\+add\+\_\+tail (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+list} $\ast$}]{lst, }
+\item[{void const $\ast$}]{content, }
+\item[{unsigned int}]{content\+\_\+size}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a5041ef68b16f9c61bf62871ff6f7bd17}{}\label{list_8h_a5041ef68b16f9c61bf62871ff6f7bd17}
+
+
+Ajoutes un élement en in liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+{\em content} & \+: la donnée à ajouter \\
+\hline
+{\em content\+\_\+size} & \+: la taille de la donnée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: l\textquotesingle{}adresse où la donnée a été copié
+\end{DoxyReturn}
+Ajoutes un élement en in liste.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+{\em content} & \+: la donnée à ajouter \\
+\hline
+{\em content\+\_\+size} & \+: la taille de la donnée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: l\textquotesingle{}adresse où la donnée a été copiée 
+\end{DoxyReturn}
+\index{list.\+h@{list.\+h}!list\+\_\+clear@{list\+\_\+clear}}
+\index{list\+\_\+clear@{list\+\_\+clear}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+clear(t\+\_\+list $\ast$lst)}{list_clear(t_list *lst)}}]{\setlength{\rightskip}{0pt plus 5cm}void list\+\_\+clear (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+list} $\ast$}]{lst}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a8203eb5adb7aa74096e7c524911d2350}{}\label{list_8h_a8203eb5adb7aa74096e7c524911d2350}
+
+
+Supprimes tous les éléments de la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste\\
+\hline
+\end{DoxyParams}
+Supprimes tous les éléments de la liste.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+\end{DoxyParams}
+\index{list.\+h@{list.\+h}!list\+\_\+delete@{list\+\_\+delete}}
+\index{list\+\_\+delete@{list\+\_\+delete}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+delete(t\+\_\+list $\ast$lst)}{list_delete(t_list *lst)}}]{\setlength{\rightskip}{0pt plus 5cm}void list\+\_\+delete (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+list} $\ast$}]{lst}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a0cc717364da33b603e3cc481f6e7545d}{}\label{list_8h_a0cc717364da33b603e3cc481f6e7545d}
+
+
+Libères la mémoire dedié à la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste\\
+\hline
+\end{DoxyParams}
+Libères la mémoire dedié à la liste.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+\end{DoxyParams}
+\index{list.\+h@{list.\+h}!list\+\_\+get\+\_\+head@{list\+\_\+get\+\_\+head}}
+\index{list\+\_\+get\+\_\+head@{list\+\_\+get\+\_\+head}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+get\+\_\+head(t\+\_\+list $\ast$lst)}{list_get_head(t_list *lst)}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ list\+\_\+get\+\_\+head (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+list} $\ast$}]{lst}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_ac120f163094e1cdfb8b2a13a5694d3d1}{}\label{list_8h_ac120f163094e1cdfb8b2a13a5694d3d1}
+
+
+Recuperes la donnée en tête de liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La donnée en tête de liste
+\end{DoxyReturn}
+Recuperes la donnée en tête de liste.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La donnée en tête de liste 
+\end{DoxyReturn}
+\index{list.\+h@{list.\+h}!list\+\_\+get\+\_\+tail@{list\+\_\+get\+\_\+tail}}
+\index{list\+\_\+get\+\_\+tail@{list\+\_\+get\+\_\+tail}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+get\+\_\+tail(t\+\_\+list $\ast$lst)}{list_get_tail(t_list *lst)}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ list\+\_\+get\+\_\+tail (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+list} $\ast$}]{lst}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a344922a08d76525305ac20ad3882c7d6}{}\label{list_8h_a344922a08d76525305ac20ad3882c7d6}
+
+
+Recuperes la donnée en fin de liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La donnée en fin de liste
+\end{DoxyReturn}
+Recuperes la donnée en fin de liste.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La donnée en fin de liste 
+\end{DoxyReturn}
+\index{list.\+h@{list.\+h}!list\+\_\+map@{list\+\_\+map}}
+\index{list\+\_\+map@{list\+\_\+map}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+map(t\+\_\+list $\ast$lst, void($\ast$f)(void const $\ast$value))}{list_map(t_list *lst, void(*f)(void const *value))}}]{\setlength{\rightskip}{0pt plus 5cm}void list\+\_\+map (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+list} $\ast$}]{lst, }
+\item[{void($\ast$)(void const $\ast$value)}]{f}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a8435bec3495ee4b604c2aec457ea4291}{}\label{list_8h_a8435bec3495ee4b604c2aec457ea4291}
+
+
+Appliques une fonction sur chaque donnée de la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+{\em f} & \+: une fonction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si succès, 0 sinon
+\end{DoxyReturn}
+Appliques une fonction sur chaque donnée de la liste.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+{\em f} & \+: une fonction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si succès, 0 sinon 
+\end{DoxyReturn}
+\index{list.\+h@{list.\+h}!list\+\_\+new@{list\+\_\+new}}
+\index{list\+\_\+new@{list\+\_\+new}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+new(void)}{list_new(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+list}$\ast$ list\+\_\+new (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a5ed6c55f949d2bf6949bdaf117e2e7c7}{}\label{list_8h_a5ed6c55f949d2bf6949bdaf117e2e7c7}
+
+
+crée une nouvelle liste doublent chainée circulaire 
+
+\begin{DoxyReturn}{Returns}
+une nouvelle liste, ou N\+U\+LL si erreur
+\end{DoxyReturn}
+crée une nouvelle liste doublent chainée circulaire
+
+\begin{DoxyReturn}{Returns}
+une nouvelle liste, ou N\+U\+LL si erreur 
+\end{DoxyReturn}
+\index{list.\+h@{list.\+h}!list\+\_\+node\+\_\+data@{list\+\_\+node\+\_\+data}}
+\index{list\+\_\+node\+\_\+data@{list\+\_\+node\+\_\+data}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+node\+\_\+data(t\+\_\+list\+\_\+node $\ast$node)}{list_node_data(t_list_node *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ list\+\_\+node\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+list\+\_\+node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a0e48509d17e5a8ccd64b86448d8dce60}{}\label{list_8h_a0e48509d17e5a8ccd64b86448d8dce60}
+
+
+Recuperes la donnée sur un sommet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & \+: un sommet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la donnée enregistré sur le sommet
+\end{DoxyReturn}
+Recuperes la donnée sur un sommet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & \+: un sommet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la donnée enregistrée sur le sommet 
+\end{DoxyReturn}
+\index{list.\+h@{list.\+h}!list\+\_\+remove\+\_\+head@{list\+\_\+remove\+\_\+head}}
+\index{list\+\_\+remove\+\_\+head@{list\+\_\+remove\+\_\+head}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+remove\+\_\+head(t\+\_\+list $\ast$lst)}{list_remove_head(t_list *lst)}}]{\setlength{\rightskip}{0pt plus 5cm}int list\+\_\+remove\+\_\+head (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+list} $\ast$}]{lst}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a001a1ab7bbe7dae4815a53666e3e546c}{}\label{list_8h_a001a1ab7bbe7dae4815a53666e3e546c}
+
+
+Supprimes l\textquotesingle{}élément en tête de liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si succès, 0 sinon
+\end{DoxyReturn}
+Supprimes l\textquotesingle{}élément en tête de liste.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si succès, 0 sinon 
+\end{DoxyReturn}
+\index{list.\+h@{list.\+h}!list\+\_\+remove\+\_\+node@{list\+\_\+remove\+\_\+node}}
+\index{list\+\_\+remove\+\_\+node@{list\+\_\+remove\+\_\+node}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+remove\+\_\+node(t\+\_\+list $\ast$lst, t\+\_\+list\+\_\+node $\ast$node)}{list_remove_node(t_list *lst, t_list_node *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void list\+\_\+remove\+\_\+node (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+list} $\ast$}]{lst, }
+\item[{{\bf t\+\_\+list\+\_\+node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_ab6bd52b92f546ffd6a05d7f4b35f578f}{}\label{list_8h_ab6bd52b92f546ffd6a05d7f4b35f578f}
+
+
+Supprimes un sommet de la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+{\em node} & \+: un sommet de la liste\\
+\hline
+\end{DoxyParams}
+Supprimes un sommet de la liste.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+{\em node} & \+: un sommet de la liste \\
+\hline
+\end{DoxyParams}
+\index{list.\+h@{list.\+h}!list\+\_\+remove\+\_\+tail@{list\+\_\+remove\+\_\+tail}}
+\index{list\+\_\+remove\+\_\+tail@{list\+\_\+remove\+\_\+tail}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+remove\+\_\+tail(t\+\_\+list $\ast$lst)}{list_remove_tail(t_list *lst)}}]{\setlength{\rightskip}{0pt plus 5cm}int list\+\_\+remove\+\_\+tail (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+list} $\ast$}]{lst}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_adbb3b2b5e947aee132fa1cba3f32bff4}{}\label{list_8h_adbb3b2b5e947aee132fa1cba3f32bff4}
+
+
+Supprimes l\textquotesingle{}élément en fin de liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si succès, 0 sinon
+\end{DoxyReturn}
+Supprimes l\textquotesingle{}élément en fin de liste.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \+: une liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si succès, 0 sinon 
+\end{DoxyReturn}

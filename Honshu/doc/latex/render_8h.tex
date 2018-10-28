@@ -1,0 +1,116 @@
+\hypertarget{render_8h}{}\section{/home/rpereira/\+Honshu/includes/render.h File Reference}
+\label{render_8h}\index{/home/rpereira/\+Honshu/includes/render.\+h@{/home/rpereira/\+Honshu/includes/render.\+h}}
+
+
+interface for rendering/input pipeline  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}honshu.\+h\char`\"{}}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structs__honshu}{s\+\_\+honshu} \hyperlink{render_8h_a40e306f6583629c9ab62856566096d4c}{t\+\_\+hs}
+\item 
+typedef struct \hyperlink{structs__render}{s\+\_\+render} {\bfseries t\+\_\+render}\hypertarget{render_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}{}\label{render_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structs__render}{t\+\_\+render} $\ast$ \hyperlink{render_8h_a161582fc30e13880ab69c634e88fbc39}{render\+\_\+new} (void)
+\begin{DoxyCompactList}\small\item\em Initialise the renderer. \end{DoxyCompactList}\item 
+int \hyperlink{render_8h_ab26b83895897d7b9d409cd93fa729b1d}{render\+\_\+delete} (\hyperlink{structs__render}{t\+\_\+render} $\ast$render)
+\begin{DoxyCompactList}\small\item\em De-\/initialise the renderer. \end{DoxyCompactList}\item 
+void \hyperlink{render_8h_a12070e3d6eb3fc5fd92157b860c42aaa}{render\+\_\+update} (\hyperlink{structs__honshu}{t\+\_\+hs} $\ast$hs, \hyperlink{structs__render}{t\+\_\+render} $\ast$render)
+\begin{DoxyCompactList}\small\item\em Update the game (process input) \end{DoxyCompactList}\item 
+void \hyperlink{render_8h_a44f8f3b2ee38e1f47a0710784abc97d9}{render\+\_\+draw} (\hyperlink{structs__honshu}{t\+\_\+hs} $\ast$hs, \hyperlink{structs__render}{t\+\_\+render} $\ast$render)
+\begin{DoxyCompactList}\small\item\em Draw the current game status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+interface for rendering/input pipeline 
+
+\begin{DoxyAuthor}{Authors}
+Romain P\+E\+R\+E\+I\+RA, Douha O\+U\+R\+I\+MI, Afizullah R\+A\+H\+M\+A\+NY, Guang\+Yue C\+H\+EN 
+\end{DoxyAuthor}
+
+
+\subsection{Typedef Documentation}
+\index{render.\+h@{render.\+h}!t\+\_\+hs@{t\+\_\+hs}}
+\index{t\+\_\+hs@{t\+\_\+hs}!render.\+h@{render.\+h}}
+\subsubsection[{\texorpdfstring{t\+\_\+hs}{t_hs}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf s\+\_\+honshu} {\bf t\+\_\+hs}}\hypertarget{render_8h_a40e306f6583629c9ab62856566096d4c}{}\label{render_8h_a40e306f6583629c9ab62856566096d4c}
+render structure 
+
+\subsection{Function Documentation}
+\index{render.\+h@{render.\+h}!render\+\_\+delete@{render\+\_\+delete}}
+\index{render\+\_\+delete@{render\+\_\+delete}!render.\+h@{render.\+h}}
+\subsubsection[{\texorpdfstring{render\+\_\+delete(t\+\_\+render $\ast$render)}{render_delete(t_render *render)}}]{\setlength{\rightskip}{0pt plus 5cm}int render\+\_\+delete (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+render} $\ast$}]{render}
+\end{DoxyParamCaption}
+)}\hypertarget{render_8h_ab26b83895897d7b9d409cd93fa729b1d}{}\label{render_8h_ab26b83895897d7b9d409cd93fa729b1d}
+
+
+De-\/initialise the renderer. 
+
+\begin{DoxyReturn}{Returns}
+1 if the renderer was de-\/initialized, 0 else. 
+\end{DoxyReturn}
+\index{render.\+h@{render.\+h}!render\+\_\+draw@{render\+\_\+draw}}
+\index{render\+\_\+draw@{render\+\_\+draw}!render.\+h@{render.\+h}}
+\subsubsection[{\texorpdfstring{render\+\_\+draw(t\+\_\+hs $\ast$hs, t\+\_\+render $\ast$render)}{render_draw(t_hs *hs, t_render *render)}}]{\setlength{\rightskip}{0pt plus 5cm}void render\+\_\+draw (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+hs} $\ast$}]{hs, }
+\item[{{\bf t\+\_\+render} $\ast$}]{render}
+\end{DoxyParamCaption}
+)}\hypertarget{render_8h_a44f8f3b2ee38e1f47a0710784abc97d9}{}\label{render_8h_a44f8f3b2ee38e1f47a0710784abc97d9}
+
+
+Draw the current game status. 
+
+Update the game (process input) 
+\begin{DoxyParams}{Parameters}
+{\em hs} & \+: the game instance \\
+\hline
+{\em render} & \+: the render instance\\
+\hline
+{\em hs} & \+: the game instance \\
+\hline
+{\em render} & \+: the render instance \\
+\hline
+\end{DoxyParams}
+\index{render.\+h@{render.\+h}!render\+\_\+new@{render\+\_\+new}}
+\index{render\+\_\+new@{render\+\_\+new}!render.\+h@{render.\+h}}
+\subsubsection[{\texorpdfstring{render\+\_\+new(void)}{render_new(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+render}$\ast$ render\+\_\+new (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{render_8h_a161582fc30e13880ab69c634e88fbc39}{}\label{render_8h_a161582fc30e13880ab69c634e88fbc39}
+
+
+Initialise the renderer. 
+
+\begin{DoxyReturn}{Returns}
+a new renderer, or N\+U\+LL on error 
+\end{DoxyReturn}
+\index{render.\+h@{render.\+h}!render\+\_\+update@{render\+\_\+update}}
+\index{render\+\_\+update@{render\+\_\+update}!render.\+h@{render.\+h}}
+\subsubsection[{\texorpdfstring{render\+\_\+update(t\+\_\+hs $\ast$hs, t\+\_\+render $\ast$render)}{render_update(t_hs *hs, t_render *render)}}]{\setlength{\rightskip}{0pt plus 5cm}void render\+\_\+update (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+hs} $\ast$}]{hs, }
+\item[{{\bf t\+\_\+render} $\ast$}]{render}
+\end{DoxyParamCaption}
+)}\hypertarget{render_8h_a12070e3d6eb3fc5fd92157b860c42aaa}{}\label{render_8h_a12070e3d6eb3fc5fd92157b860c42aaa}
+
+
+Update the game (process input) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hs} & \+: the game instance \\
+\hline
+{\em render} & \+: the render instance \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,447 @@
+\hypertarget{array_8h}{}\section{/home/rpereira/\+Honshu/includes/array.h File Reference}
+\label{array_8h}\index{/home/rpereira/\+Honshu/includes/array.\+h@{/home/rpereira/\+Honshu/includes/array.\+h}}
+
+
+A generic array structure.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structs__array}{s\+\_\+array}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{array_8h_aec93e83855ac17c3c25c55c37ca186dd}{B\+Y\+TE}~unsigned char
+\item 
+\#define \hyperlink{array_8h_abff053a0bb6c843ac45e94aef39b7cca}{A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+RT}(A,  T,  X,  I)
+\item 
+\#define {\bfseries A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+OP}(A,  T,  X,  I)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int($\ast$ \hyperlink{array_8h_adb48324cc653bc09130af57c0affc692}{t\+\_\+cmpf}) (void const $\ast$a, void const $\ast$b)
+\item 
+typedef struct \hyperlink{structs__array}{s\+\_\+array} {\bfseries t\+\_\+array}\hypertarget{array_8h_ae84abbc510b3313d7bf6f7305625b1b2}{}\label{array_8h_ae84abbc510b3313d7bf6f7305625b1b2}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structs__array}{t\+\_\+array} $\ast$ \hyperlink{array_8h_ad064a50aad5f0e9a2009f6ec282f847e}{array\+\_\+new} (unsigned int default\+Capacity, unsigned int elem\+Size)
+\item 
+void \hyperlink{array_8h_a715232a8b24029cbc48ae3a699aa16e1}{array\+\_\+delete} (\hyperlink{structs__array}{t\+\_\+array} $\ast$array)
+\item 
+int \hyperlink{array_8h_a98b8505b99828ae98e3b974468170973}{array\+\_\+grow} (\hyperlink{structs__array}{t\+\_\+array} $\ast$array, unsigned int capacity)
+\item 
+void $\ast$ \hyperlink{array_8h_a78cfbefb324b0143ee8ffe340ab66142}{array\+\_\+get} (\hyperlink{structs__array}{t\+\_\+array} $\ast$array, unsigned int index)
+\item 
+int \hyperlink{array_8h_acaf24da40c51ba056f0b4a06d8c3a5c9}{array\+\_\+set} (\hyperlink{structs__array}{t\+\_\+array} $\ast$array, unsigned int index, void $\ast$value)
+\item 
+int \hyperlink{array_8h_a74af70d28f4d6c2fde9150feece1891f}{array\+\_\+insert} (\hyperlink{structs__array}{t\+\_\+array} $\ast$array, unsigned int index, void $\ast$value)
+\item 
+int \hyperlink{array_8h_a07923e0f052e20c89648a30bb42724b9}{array\+\_\+add} (\hyperlink{structs__array}{t\+\_\+array} $\ast$array, void $\ast$value)
+\item 
+int \hyperlink{array_8h_a582f488b3e8ae5a340e5d0239ff4f0fd}{array\+\_\+addn} (\hyperlink{structs__array}{t\+\_\+array} $\ast$array, void $\ast$value, unsigned int n)
+\item 
+int \hyperlink{array_8h_a10ba9602e4f219306a0309ccd4bd8027}{array\+\_\+addempty} (\hyperlink{structs__array}{t\+\_\+array} $\ast$array, unsigned int n)
+\item 
+int \hyperlink{array_8h_ad46bd87d0b9b0318628513bb6ccc84c5}{array\+\_\+add\+\_\+all} (\hyperlink{structs__array}{t\+\_\+array} $\ast$array, void $\ast$values, unsigned int count)
+\item 
+void \hyperlink{array_8h_a70333aa0027f3a813b9658d8c355b343}{array\+\_\+clear} (\hyperlink{structs__array}{t\+\_\+array} $\ast$array)
+\item 
+void \hyperlink{array_8h_aff4bbdb900bc22330b3da93305ac48a6}{array\+\_\+trim} (\hyperlink{structs__array}{t\+\_\+array} $\ast$array)
+\item 
+void \hyperlink{array_8h_a674279ae7206928812375e61f4aa1540}{array\+\_\+remove} (\hyperlink{structs__array}{t\+\_\+array} $\ast$array, unsigned int index)
+\item 
+void \hyperlink{array_8h_ae2a7fd3f33124c9caf57764d2aeb3c94}{array\+\_\+removelast} (\hyperlink{structs__array}{t\+\_\+array} $\ast$array)
+\item 
+void \hyperlink{array_8h_ae12ffb8ab7900828082f4d1612f2f41f}{array\+\_\+sort} (\hyperlink{structs__array}{t\+\_\+array} $\ast$array, int($\ast$cmpf)(const void $\ast$left, const void $\ast$right))
+\item 
+void \hyperlink{array_8h_a118a6f1cf31b079b7673a9ad5eb52a11}{array\+\_\+reverse} (\hyperlink{structs__array}{t\+\_\+array} $\ast$array)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A generic array structure. 
+
+\begin{DoxyAuthor}{Authors}
+Romain P\+E\+R\+E\+I\+RA, Douha O\+U\+R\+I\+MI, Afizullah R\+A\+H\+M\+A\+NY, Guang\+Yue C\+H\+EN 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\index{array.\+h@{array.\+h}!A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+RT@{A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+RT}}
+\index{A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+RT@{A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+RT}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+RT}{ARRAY_ITERATE_START}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+A\+RT(
+\begin{DoxyParamCaption}
+\item[{}]{A, }
+\item[{}]{T, }
+\item[{}]{X, }
+\item[{}]{I}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_abff053a0bb6c843ac45e94aef39b7cca}{}\label{array_8h_abff053a0bb6c843ac45e94aef39b7cca}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+        if (A != NULL) \{\(\backslash\)
+            size\_t I;\(\backslash\)
+            for (I = 0 ; I < (A)->size ; I++) \{\(\backslash\)
+                T X = ((T)(A)->values) + I;
+\end{DoxyCode}
+Macro to iterate efficiently over the array \begin{DoxyVerb}A : an array
+T : the type of the data in the array
+X : name of iterated data
+I : name of iterated data's index
+\end{DoxyVerb}
+
+
+exemple\+: 
+
+ t\+\_\+array $\ast$ array = array\+\_\+new(16, sizeof(char $\ast$));
+
+array\+\_\+add(array, strdup(\char`\"{}\+Hello\char`\"{})); array\+\_\+add(array, strdup(\char`\"{}\+World\char`\"{}));
+
+A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+\_\+\+S\+T\+A\+R\+T(array, char $\ast$, str, i) \{ printf(\char`\"{}\%d \+: \%s\textbackslash{}n\char`\"{}, i, str); \} \subsubsection*{A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+\_\+\+E\+N\+D(array, char $\ast$, str, i); }
+
+print\+: $>$ 0 \+: Hello $>$ 1 \+: World \index{array.\+h@{array.\+h}!A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+OP@{A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+OP}}
+\index{A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+OP@{A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+OP}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+OP}{ARRAY_ITERATE_STOP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+R\+R\+A\+Y\+\_\+\+I\+T\+E\+R\+A\+T\+E\+\_\+\+S\+T\+OP(
+\begin{DoxyParamCaption}
+\item[{}]{A, }
+\item[{}]{T, }
+\item[{}]{X, }
+\item[{}]{I}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_add2456087b42faf1e4a044d410abb4db}{}\label{array_8h_add2456087b42faf1e4a044d410abb4db}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\}\(\backslash\)
+        \}\(\backslash\)
+    \}
+\end{DoxyCode}
+\index{array.\+h@{array.\+h}!B\+Y\+TE@{B\+Y\+TE}}
+\index{B\+Y\+TE@{B\+Y\+TE}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{B\+Y\+TE}{BYTE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+Y\+TE~unsigned char}\hypertarget{array_8h_aec93e83855ac17c3c25c55c37ca186dd}{}\label{array_8h_aec93e83855ac17c3c25c55c37ca186dd}
+Macro for a generic byte type 
+
+\subsection{Typedef Documentation}
+\index{array.\+h@{array.\+h}!t\+\_\+cmpf@{t\+\_\+cmpf}}
+\index{t\+\_\+cmpf@{t\+\_\+cmpf}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{t\+\_\+cmpf}{t_cmpf}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ t\+\_\+cmpf) (void const $\ast$a, void const $\ast$b)}\hypertarget{array_8h_adb48324cc653bc09130af57c0affc692}{}\label{array_8h_adb48324cc653bc09130af57c0affc692}
+typedef to use \textquotesingle{}array\+\_\+sort\textquotesingle{} 
+
+\subsection{Function Documentation}
+\index{array.\+h@{array.\+h}!array\+\_\+add@{array\+\_\+add}}
+\index{array\+\_\+add@{array\+\_\+add}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+add(t\+\_\+array $\ast$array, void $\ast$value)}{array_add(t_array *array, void *value)}}]{\setlength{\rightskip}{0pt plus 5cm}int array\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+array} $\ast$}]{array, }
+\item[{void $\ast$}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_a07923e0f052e20c89648a30bb42724b9}{}\label{array_8h_a07923e0f052e20c89648a30bb42724b9}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array instance \\
+\hline
+{\em value} & \+: a pointer where the data to be copied is stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the value was added, 0 else
+\end{DoxyReturn}
+simple macro for \begin{DoxySeeAlso}{See also}
+\hyperlink{array_8h_acaf24da40c51ba056f0b4a06d8c3a5c9}{array\+\_\+set} with {\itshape index} = array-\/$>$size 
+\end{DoxySeeAlso}
+\index{array.\+h@{array.\+h}!array\+\_\+add\+\_\+all@{array\+\_\+add\+\_\+all}}
+\index{array\+\_\+add\+\_\+all@{array\+\_\+add\+\_\+all}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+add\+\_\+all(t\+\_\+array $\ast$array, void $\ast$values, unsigned int count)}{array_add_all(t_array *array, void *values, unsigned int count)}}]{\setlength{\rightskip}{0pt plus 5cm}int array\+\_\+add\+\_\+all (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+array} $\ast$}]{array, }
+\item[{void $\ast$}]{values, }
+\item[{unsigned int}]{count}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_ad46bd87d0b9b0318628513bb6ccc84c5}{}\label{array_8h_ad46bd87d0b9b0318628513bb6ccc84c5}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array instance \\
+\hline
+{\em values} & \+: a pointer where {\itshape count} element of size {\itshape elem\+Size} are stored. \\
+\hline
+{\em count} & \+: number of element of {\itshape elem\+Size} stored at address {\itshape values}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: the index where the first element was added, if the elements could be added {\itshape n} times, -\/1 else 
+\end{DoxyReturn}
+\index{array.\+h@{array.\+h}!array\+\_\+addempty@{array\+\_\+addempty}}
+\index{array\+\_\+addempty@{array\+\_\+addempty}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+addempty(t\+\_\+array $\ast$array, unsigned int n)}{array_addempty(t_array *array, unsigned int n)}}]{\setlength{\rightskip}{0pt plus 5cm}int array\+\_\+addempty (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+array} $\ast$}]{array, }
+\item[{unsigned int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_a10ba9602e4f219306a0309ccd4bd8027}{}\label{array_8h_a10ba9602e4f219306a0309ccd4bd8027}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array instance \\
+\hline
+{\em n} & \+: number of time an empty element should be added. (memory is un-\/initialized) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: the index where the first element was added, if the element could be added {\itshape n} times, -\/1 else 
+\end{DoxyReturn}
+\index{array.\+h@{array.\+h}!array\+\_\+addn@{array\+\_\+addn}}
+\index{array\+\_\+addn@{array\+\_\+addn}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+addn(t\+\_\+array $\ast$array, void $\ast$value, unsigned int n)}{array_addn(t_array *array, void *value, unsigned int n)}}]{\setlength{\rightskip}{0pt plus 5cm}int array\+\_\+addn (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+array} $\ast$}]{array, }
+\item[{void $\ast$}]{value, }
+\item[{unsigned int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_a582f488b3e8ae5a340e5d0239ff4f0fd}{}\label{array_8h_a582f488b3e8ae5a340e5d0239ff4f0fd}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array instance \\
+\hline
+{\em value} & \+: pointer to an element to be added \\
+\hline
+{\em n} & \+: number of time this element should be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: the index where the first element was added, if the element could be added {\itshape n} times, -\/1 else 
+\end{DoxyReturn}
+\index{array.\+h@{array.\+h}!array\+\_\+clear@{array\+\_\+clear}}
+\index{array\+\_\+clear@{array\+\_\+clear}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+clear(t\+\_\+array $\ast$array)}{array_clear(t_array *array)}}]{\setlength{\rightskip}{0pt plus 5cm}void array\+\_\+clear (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+array} $\ast$}]{array}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_a70333aa0027f3a813b9658d8c355b343}{}\label{array_8h_a70333aa0027f3a813b9658d8c355b343}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array instance Remove all entries of the array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAttention}{Attention}
+The array capacity isn\textquotesingle{}t changed! 
+\end{DoxyAttention}
+\index{array.\+h@{array.\+h}!array\+\_\+delete@{array\+\_\+delete}}
+\index{array\+\_\+delete@{array\+\_\+delete}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+delete(t\+\_\+array $\ast$array)}{array_delete(t_array *array)}}]{\setlength{\rightskip}{0pt plus 5cm}void array\+\_\+delete (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+array} $\ast$}]{array}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_a715232a8b24029cbc48ae3a699aa16e1}{}\label{array_8h_a715232a8b24029cbc48ae3a699aa16e1}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array instance\\
+\hline
+\end{DoxyParams}
+Free the array memory. \index{array.\+h@{array.\+h}!array\+\_\+get@{array\+\_\+get}}
+\index{array\+\_\+get@{array\+\_\+get}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+get(t\+\_\+array $\ast$array, unsigned int index)}{array_get(t_array *array, unsigned int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ array\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+array} $\ast$}]{array, }
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_a78cfbefb324b0143ee8ffe340ab66142}{}\label{array_8h_a78cfbefb324b0143ee8ffe340ab66142}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array instance \\
+\hline
+{\em index} & \+: an index in \mbox{[}0, array-\/$>$size -\/ 1\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the element at {\itshape index} in {\itshape array} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array instance \\
+\hline
+{\em capacity} & \+: new capacity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the array capacity grew, 0 else 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+\+: if capacity $<$ array-\/$>$size, their might be data losses! 
+\end{DoxyAttention}
+\index{array.\+h@{array.\+h}!array\+\_\+grow@{array\+\_\+grow}}
+\index{array\+\_\+grow@{array\+\_\+grow}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+grow(t\+\_\+array $\ast$array, unsigned int capacity)}{array_grow(t_array *array, unsigned int capacity)}}]{\setlength{\rightskip}{0pt plus 5cm}int array\+\_\+grow (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+array} $\ast$}]{array, }
+\item[{unsigned int}]{capacity}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_a98b8505b99828ae98e3b974468170973}{}\label{array_8h_a98b8505b99828ae98e3b974468170973}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array instance \\
+\hline
+{\em capacity} & \+: new capacity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the array capacity grew, 0 else 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+\+: if capacity $<$ array-\/$>$size, their might be data losses! 
+\end{DoxyAttention}
+\index{array.\+h@{array.\+h}!array\+\_\+insert@{array\+\_\+insert}}
+\index{array\+\_\+insert@{array\+\_\+insert}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+insert(t\+\_\+array $\ast$array, unsigned int index, void $\ast$value)}{array_insert(t_array *array, unsigned int index, void *value)}}]{\setlength{\rightskip}{0pt plus 5cm}int array\+\_\+insert (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+array} $\ast$}]{array, }
+\item[{unsigned int}]{index, }
+\item[{void $\ast$}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_a74af70d28f4d6c2fde9150feece1891f}{}\label{array_8h_a74af70d28f4d6c2fde9150feece1891f}
+Insert a value into the array. Existing values are shited right.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array instance \\
+\hline
+{\em index} & \+: an index in \mbox{[}0, array-\/$>$size -\/ 1\mbox{]} \\
+\hline
+{\em value} & \+: a pointer where the data to be copied is stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the index of the element, if it was inserted, -\/1 else 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{array_8h_a74af70d28f4d6c2fde9150feece1891f}{array\+\_\+insert} 
+\end{DoxySeeAlso}
+\index{array.\+h@{array.\+h}!array\+\_\+new@{array\+\_\+new}}
+\index{array\+\_\+new@{array\+\_\+new}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+new(unsigned int default\+Capacity, unsigned int elem\+Size)}{array_new(unsigned int defaultCapacity, unsigned int elemSize)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+array}$\ast$ array\+\_\+new (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{default\+Capacity, }
+\item[{unsigned int}]{elem\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_ad064a50aad5f0e9a2009f6ec282f847e}{}\label{array_8h_ad064a50aad5f0e9a2009f6ec282f847e}
+
+\begin{DoxyParams}{Parameters}
+{\em default\+Capacity} & \+: default capacity of the array (number of element of size \textquotesingle{}elem\+Size\textquotesingle{} that can be stored without any reallocation) \\
+\hline
+{\em elem\+Size} & \+: size in byte of the data unit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new array
+\end{DoxyReturn}
+Allocate and initialize a new dynamic array which can stores data of size {\itshape elem\+Size}. The default capacity is {\itshape default\+Capacity}. When more element that {\itshape array.\+capacity} are inserted, the array grows it capacity automatically. \index{array.\+h@{array.\+h}!array\+\_\+remove@{array\+\_\+remove}}
+\index{array\+\_\+remove@{array\+\_\+remove}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+remove(t\+\_\+array $\ast$array, unsigned int index)}{array_remove(t_array *array, unsigned int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void array\+\_\+remove (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+array} $\ast$}]{array, }
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_a674279ae7206928812375e61f4aa1540}{}\label{array_8h_a674279ae7206928812375e61f4aa1540}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array instance \\
+\hline
+{\em index} & \+: an index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAttention}{Attention}
+\+: if trying to remove the last element, you\textquotesingle{}d better call 
+\end{DoxyAttention}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{array_8h_a674279ae7206928812375e61f4aa1540}{array\+\_\+remove}, which is more performant. Remove the element at {\itshape index} from the array. Other indices ($>$ {\itshape index}) are shifted left so there is no \textquotesingle{}hole\textquotesingle{} in the array 
+\end{DoxySeeAlso}
+\index{array.\+h@{array.\+h}!array\+\_\+removelast@{array\+\_\+removelast}}
+\index{array\+\_\+removelast@{array\+\_\+removelast}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+removelast(t\+\_\+array $\ast$array)}{array_removelast(t_array *array)}}]{\setlength{\rightskip}{0pt plus 5cm}void array\+\_\+removelast (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+array} $\ast$}]{array}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_ae2a7fd3f33124c9caf57764d2aeb3c94}{}\label{array_8h_ae2a7fd3f33124c9caf57764d2aeb3c94}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array inst Remove the last element of the array. \\
+\hline
+\end{DoxyParams}
+\index{array.\+h@{array.\+h}!array\+\_\+reverse@{array\+\_\+reverse}}
+\index{array\+\_\+reverse@{array\+\_\+reverse}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+reverse(t\+\_\+array $\ast$array)}{array_reverse(t_array *array)}}]{\setlength{\rightskip}{0pt plus 5cm}void array\+\_\+reverse (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+array} $\ast$}]{array}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_a118a6f1cf31b079b7673a9ad5eb52a11}{}\label{array_8h_a118a6f1cf31b079b7673a9ad5eb52a11}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array instance reverse element order in the array \\
+\hline
+\end{DoxyParams}
+\index{array.\+h@{array.\+h}!array\+\_\+set@{array\+\_\+set}}
+\index{array\+\_\+set@{array\+\_\+set}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+set(t\+\_\+array $\ast$array, unsigned int index, void $\ast$value)}{array_set(t_array *array, unsigned int index, void *value)}}]{\setlength{\rightskip}{0pt plus 5cm}int array\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+array} $\ast$}]{array, }
+\item[{unsigned int}]{index, }
+\item[{void $\ast$}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_acaf24da40c51ba056f0b4a06d8c3a5c9}{}\label{array_8h_acaf24da40c51ba056f0b4a06d8c3a5c9}
+Set a value of the array, previously set value is erased!
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array instance \\
+\hline
+{\em index} & \+: an index in \mbox{[}0, array-\/$>$size -\/ 1\mbox{]} \\
+\hline
+{\em value} & \+: a pointer where the data to be copied is stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the index of the element, if it was added, -\/1 else 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+\+: erase the previously set data at {\itshape index}. if index $>$ array-\/$>$size, then index = array-\/$>$size. 
+\end{DoxyAttention}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{array_8h_a74af70d28f4d6c2fde9150feece1891f}{array\+\_\+insert} 
+\end{DoxySeeAlso}
+\index{array.\+h@{array.\+h}!array\+\_\+sort@{array\+\_\+sort}}
+\index{array\+\_\+sort@{array\+\_\+sort}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+sort(t\+\_\+array $\ast$array, int($\ast$cmpf)(const void $\ast$left, const void $\ast$right))}{array_sort(t_array *array, int(*cmpf)(const void *left, const void *right))}}]{\setlength{\rightskip}{0pt plus 5cm}void array\+\_\+sort (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+array} $\ast$}]{array, }
+\item[{int($\ast$)(const void $\ast$left, const void $\ast$right)}]{cmpf}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_ae12ffb8ab7900828082f4d1612f2f41f}{}\label{array_8h_ae12ffb8ab7900828082f4d1612f2f41f}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array instance \\
+\hline
+{\em cmpf} & \+: a comparison function (\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+strcmp) Sort the array using std\+::qsort() 
+\end{DoxySeeAlso}
+\index{array.\+h@{array.\+h}!array\+\_\+trim@{array\+\_\+trim}}
+\index{array\+\_\+trim@{array\+\_\+trim}!array.\+h@{array.\+h}}
+\subsubsection[{\texorpdfstring{array\+\_\+trim(t\+\_\+array $\ast$array)}{array_trim(t_array *array)}}]{\setlength{\rightskip}{0pt plus 5cm}void array\+\_\+trim (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+array} $\ast$}]{array}
+\end{DoxyParamCaption}
+)}\hypertarget{array_8h_aff4bbdb900bc22330b3da93305ac48a6}{}\label{array_8h_aff4bbdb900bc22330b3da93305ac48a6}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \+: an array instance resize the array, so it capacity match it size. \\
+\hline
+\end{DoxyParams}

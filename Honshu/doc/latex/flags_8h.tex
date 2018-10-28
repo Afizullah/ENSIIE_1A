@@ -1,0 +1,71 @@
+\hypertarget{flags_8h}{}\section{/home/rpereira/\+Honshu/includes/flags.h File Reference}
+\label{flags_8h}\index{/home/rpereira/\+Honshu/includes/flags.\+h@{/home/rpereira/\+Honshu/includes/flags.\+h}}
+
+
+Des defines pour travailler avec des \textquotesingle{}bit flags\textquotesingle{}.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{flags_8h_a4e879856b06c812ce5b50443e037a4b1}{F\+L\+A\+G\+\_\+\+R\+E\+S\+ET}(X)~X = 0
+\item 
+\#define \hyperlink{flags_8h_a647f9b683018461536790e26a3e379d6}{F\+L\+A\+G\+\_\+\+I\+S\+S\+ET}(X,  F)~(X \& (F))
+\item 
+\#define \hyperlink{flags_8h_ae7e2c20c0d30ae19caf14bc0b7a06597}{F\+L\+A\+G\+\_\+\+S\+ET}(X,  F)~X $\vert$= (F)
+\item 
+\#define \hyperlink{flags_8h_abed79cbd9e90113b371d65271f80743b}{F\+L\+A\+G\+\_\+\+U\+N\+S\+ET}(X,  F)~X \&= $\sim$(F)
+\item 
+\#define \hyperlink{flags_8h_a7a729cb22a8beeffbb00861d21cccdfe}{F\+L\+A\+G\+\_\+\+S\+W\+I\+T\+CH}(X,  F)~X $^\wedge$= (F)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Des defines pour travailler avec des \textquotesingle{}bit flags\textquotesingle{}. 
+
+\begin{DoxyAuthor}{Authors}
+Romain P\+E\+R\+E\+I\+RA, Douha O\+U\+R\+I\+MI, Afizullah R\+A\+H\+M\+A\+NY, Guang\+Yue C\+H\+EN 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\index{flags.\+h@{flags.\+h}!F\+L\+A\+G\+\_\+\+I\+S\+S\+ET@{F\+L\+A\+G\+\_\+\+I\+S\+S\+ET}}
+\index{F\+L\+A\+G\+\_\+\+I\+S\+S\+ET@{F\+L\+A\+G\+\_\+\+I\+S\+S\+ET}!flags.\+h@{flags.\+h}}
+\subsubsection[{\texorpdfstring{F\+L\+A\+G\+\_\+\+I\+S\+S\+ET}{FLAG_ISSET}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+L\+A\+G\+\_\+\+I\+S\+S\+ET(
+\begin{DoxyParamCaption}
+\item[{}]{X, }
+\item[{}]{F}
+\end{DoxyParamCaption}
+)~(X \& (F))}\hypertarget{flags_8h_a647f9b683018461536790e26a3e379d6}{}\label{flags_8h_a647f9b683018461536790e26a3e379d6}
+renvoie vrai si le flag est vrai \index{flags.\+h@{flags.\+h}!F\+L\+A\+G\+\_\+\+R\+E\+S\+ET@{F\+L\+A\+G\+\_\+\+R\+E\+S\+ET}}
+\index{F\+L\+A\+G\+\_\+\+R\+E\+S\+ET@{F\+L\+A\+G\+\_\+\+R\+E\+S\+ET}!flags.\+h@{flags.\+h}}
+\subsubsection[{\texorpdfstring{F\+L\+A\+G\+\_\+\+R\+E\+S\+ET}{FLAG_RESET}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+L\+A\+G\+\_\+\+R\+E\+S\+ET(
+\begin{DoxyParamCaption}
+\item[{}]{X}
+\end{DoxyParamCaption}
+)~X = 0}\hypertarget{flags_8h_a4e879856b06c812ce5b50443e037a4b1}{}\label{flags_8h_a4e879856b06c812ce5b50443e037a4b1}
+reinitialise les flags \index{flags.\+h@{flags.\+h}!F\+L\+A\+G\+\_\+\+S\+ET@{F\+L\+A\+G\+\_\+\+S\+ET}}
+\index{F\+L\+A\+G\+\_\+\+S\+ET@{F\+L\+A\+G\+\_\+\+S\+ET}!flags.\+h@{flags.\+h}}
+\subsubsection[{\texorpdfstring{F\+L\+A\+G\+\_\+\+S\+ET}{FLAG_SET}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+L\+A\+G\+\_\+\+S\+ET(
+\begin{DoxyParamCaption}
+\item[{}]{X, }
+\item[{}]{F}
+\end{DoxyParamCaption}
+)~X $\vert$= (F)}\hypertarget{flags_8h_ae7e2c20c0d30ae19caf14bc0b7a06597}{}\label{flags_8h_ae7e2c20c0d30ae19caf14bc0b7a06597}
+définie un flag sur vrai \index{flags.\+h@{flags.\+h}!F\+L\+A\+G\+\_\+\+S\+W\+I\+T\+CH@{F\+L\+A\+G\+\_\+\+S\+W\+I\+T\+CH}}
+\index{F\+L\+A\+G\+\_\+\+S\+W\+I\+T\+CH@{F\+L\+A\+G\+\_\+\+S\+W\+I\+T\+CH}!flags.\+h@{flags.\+h}}
+\subsubsection[{\texorpdfstring{F\+L\+A\+G\+\_\+\+S\+W\+I\+T\+CH}{FLAG_SWITCH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+L\+A\+G\+\_\+\+S\+W\+I\+T\+CH(
+\begin{DoxyParamCaption}
+\item[{}]{X, }
+\item[{}]{F}
+\end{DoxyParamCaption}
+)~X $^\wedge$= (F)}\hypertarget{flags_8h_a7a729cb22a8beeffbb00861d21cccdfe}{}\label{flags_8h_a7a729cb22a8beeffbb00861d21cccdfe}
+si le flag est vrai, il est mis sur faux si le flag est faux, il est mis sur vrai \index{flags.\+h@{flags.\+h}!F\+L\+A\+G\+\_\+\+U\+N\+S\+ET@{F\+L\+A\+G\+\_\+\+U\+N\+S\+ET}}
+\index{F\+L\+A\+G\+\_\+\+U\+N\+S\+ET@{F\+L\+A\+G\+\_\+\+U\+N\+S\+ET}!flags.\+h@{flags.\+h}}
+\subsubsection[{\texorpdfstring{F\+L\+A\+G\+\_\+\+U\+N\+S\+ET}{FLAG_UNSET}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+L\+A\+G\+\_\+\+U\+N\+S\+ET(
+\begin{DoxyParamCaption}
+\item[{}]{X, }
+\item[{}]{F}
+\end{DoxyParamCaption}
+)~X \&= $\sim$(F)}\hypertarget{flags_8h_abed79cbd9e90113b371d65271f80743b}{}\label{flags_8h_abed79cbd9e90113b371d65271f80743b}
+définie un flag sur faux 

@@ -1,0 +1,383 @@
+\hypertarget{grille_8h}{}\section{/home/rpereira/\+Honshu/includes/grille.h File Reference}
+\label{grille_8h}\index{/home/rpereira/\+Honshu/includes/grille.\+h@{/home/rpereira/\+Honshu/includes/grille.\+h}}
+
+
+Data structures and core functions.  
+
+
+{\ttfamily \#include \char`\"{}honshu.\+h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structs__grille}{s\+\_\+grille}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structs__case}{s\+\_\+case} {\bfseries t\+\_\+case}\hypertarget{grille_8h_a6e8e5a5f384e887e3c6ae803d39b47b5}{}\label{grille_8h_a6e8e5a5f384e887e3c6ae803d39b47b5}
+
+\item 
+typedef struct \hyperlink{structs__tuile}{s\+\_\+tuile} {\bfseries t\+\_\+tuile}\hypertarget{grille_8h_aae4ad14a3c4b41970a20da04072c2b73}{}\label{grille_8h_aae4ad14a3c4b41970a20da04072c2b73}
+
+\item 
+typedef enum e\+\_\+case\+\_\+type {\bfseries t\+\_\+case\+\_\+type}\hypertarget{grille_8h_ab97810f4d5f35bfeb0d16af0ece3c949}{}\label{grille_8h_ab97810f4d5f35bfeb0d16af0ece3c949}
+
+\item 
+typedef struct \hyperlink{structs__grille}{s\+\_\+grille} {\bfseries t\+\_\+grille}\hypertarget{grille_8h_abd87b0218826c61ccbe9b558e05f8feb}{}\label{grille_8h_abd87b0218826c61ccbe9b558e05f8feb}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{grille_8h_ad5faeac73cb6b38d9a4a3c379696f15b}{grille\+\_\+init} (\hyperlink{structs__grille}{t\+\_\+grille} $\ast$grille, \hyperlink{types_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} n, unsigned int taille\+\_\+main)
+\begin{DoxyCompactList}\small\item\em Initialises (et alloue) la grille. \end{DoxyCompactList}\item 
+void \hyperlink{grille_8h_a0d5bf54262c8e487290d1d850ea69232}{grille\+\_\+deinit} (\hyperlink{structs__grille}{t\+\_\+grille} $\ast$grille)
+\begin{DoxyCompactList}\small\item\em Dé-\/alloue la grille. \end{DoxyCompactList}\item 
+\hyperlink{structs__case}{t\+\_\+case} $\ast$ \hyperlink{grille_8h_a3f0112450a249bbd6a9679dc6a1aaf7a}{grille\+\_\+get} (\hyperlink{structs__grille}{t\+\_\+grille} $\ast$grille, \hyperlink{types_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} x, \hyperlink{types_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} y)
+\begin{DoxyCompactList}\small\item\em Renvoie la case aux coordonnées {\itshape x} et {\itshape y} de la grille. \end{DoxyCompactList}\item 
+int \hyperlink{grille_8h_a43ca13944571564f546e4dbabd09d37a}{grille\+\_\+can\+\_\+insert} (\hyperlink{structs__grille}{t\+\_\+grille} $\ast$grille, \hyperlink{structs__tuile}{t\+\_\+tuile} $\ast$tuile, \hyperlink{types_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} x, \hyperlink{types_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} y)
+\begin{DoxyCompactList}\small\item\em Teste si la tuile peut être inséré aux coordonnées données. \end{DoxyCompactList}\item 
+int \hyperlink{grille_8h_a1d4118b6fc12aaa0ce5b38c793b6c658}{grille\+\_\+insert} (\hyperlink{structs__grille}{t\+\_\+grille} $\ast$grille, \hyperlink{structs__tuile}{t\+\_\+tuile} $\ast$tuile, \hyperlink{types_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} x, \hyperlink{types_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} y)
+\begin{DoxyCompactList}\small\item\em Insère la tuile dans la grille aux coordonnées (x, y) \end{DoxyCompactList}\item 
+int \hyperlink{grille_8h_af6f8cdb3814fa107abc477cd5159cd3a}{grille\+\_\+remove} (\hyperlink{structs__grille}{t\+\_\+grille} $\ast$grille, \hyperlink{structs__tuile}{t\+\_\+tuile} $\ast$tuile)
+\begin{DoxyCompactList}\small\item\em Supprimes la tuile de la grille. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{grille_8h_a11e4546999671c975996e4d755299b41}{grille\+\_\+visit} (\hyperlink{structs__grille}{t\+\_\+grille} $\ast$grille, \hyperlink{types_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} x, \hyperlink{types_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} y, t\+\_\+case\+\_\+type type)
+\begin{DoxyCompactList}\small\item\em \+: Comptes le nombre de cases contiguement adjacentes du même type \end{DoxyCompactList}\item 
+unsigned int \hyperlink{grille_8h_aab9d6dab491bf7f1c6cc73b51e396da5}{grille\+\_\+score} (\hyperlink{structs__grille}{t\+\_\+grille} $\ast$grille)
+\begin{DoxyCompactList}\small\item\em \+: calcule le score de la grille avec les règles données \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Data structures and core functions. 
+
+\begin{DoxyAuthor}{Authors}
+Romain P\+E\+R\+E\+I\+RA, Douha O\+U\+R\+I\+MI, Afizullah R\+A\+H\+M\+A\+NY, Guang\+Yue C\+H\+EN 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{grille.\+h@{grille.\+h}!grille\+\_\+can\+\_\+insert@{grille\+\_\+can\+\_\+insert}}
+\index{grille\+\_\+can\+\_\+insert@{grille\+\_\+can\+\_\+insert}!grille.\+h@{grille.\+h}}
+\subsubsection[{\texorpdfstring{grille\+\_\+can\+\_\+insert(t\+\_\+grille $\ast$grille, t\+\_\+tuile $\ast$tuile, I\+N\+D\+E\+X x, I\+N\+D\+E\+X y)}{grille_can_insert(t_grille *grille, t_tuile *tuile, INDEX x, INDEX y)}}]{\setlength{\rightskip}{0pt plus 5cm}int grille\+\_\+can\+\_\+insert (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+grille} $\ast$}]{grille, }
+\item[{{\bf t\+\_\+tuile} $\ast$}]{tuile, }
+\item[{{\bf I\+N\+D\+EX}}]{x, }
+\item[{{\bf I\+N\+D\+EX}}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8h_a43ca13944571564f546e4dbabd09d37a}{}\label{grille_8h_a43ca13944571564f546e4dbabd09d37a}
+
+
+Teste si la tuile peut être inséré aux coordonnées données. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & \+: la grille \\
+\hline
+{\em tuile} & \+: la tuile a inséré \\
+\hline
+{\em x} & \+: la coordonnée x \\
+\hline
+{\em y} & \+: la coordonnée y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si la tuile peut être inséré, 0 sinon 
+\end{DoxyReturn}
+booléan afin de savoir si cette tuile en recouvre au moins une autre
+
+liste des tuiles en dessous de celle qu\textquotesingle{}on insert
+
+nombre de tuile distinctes sous la tuile qu\textquotesingle{}on insère
+
+upper\mbox{[}i\mbox{]} est le nombre de fois que la tuile qu\textquotesingle{}on insère apparait \textquotesingle{}au dessus \textquotesingle{} unders\mbox{[}i\mbox{]}
+
+on vérifie que chaque case de la tuile respecte les regles d\textquotesingle{}insertion
+
+si hors de la carte, alors insertion impossible
+
+on recupere le case en dessous
+
+s\textquotesingle{}il n\textquotesingle{}y en a pas, on continue de vérifier les suivant
+
+si c\textquotesingle{}est un lac, insertion impossible
+
+sinon, il y a une tuile en dessous
+
+pour chaquue case déjà trouvé \textquotesingle{}en dessous\textquotesingle{}
+
+si c\textquotesingle{}est le meme case
+
+on incrémente le nombre de case recouverte
+
+sinon, si c\textquotesingle{}est la 1ère fois qu\textquotesingle{}on rencontre ce case en dessous
+
+on l\textquotesingle{}enregistre, et on initialise le compteur
+
+s\textquotesingle{}il n\textquotesingle{}y a aucunes autres tuiles en dessous de l\textquotesingle{}insertion...
+
+sinon, pour chaque tuile \textquotesingle{}en dessous\textquotesingle{} de celle qu\textquotesingle{}on insère ...
+
+si plus de 6 cases sont recouverts, alors la tuile est entierement recouverte\+: insertion impossible
+
+sinon, tous les tests sont passés \index{grille.\+h@{grille.\+h}!grille\+\_\+deinit@{grille\+\_\+deinit}}
+\index{grille\+\_\+deinit@{grille\+\_\+deinit}!grille.\+h@{grille.\+h}}
+\subsubsection[{\texorpdfstring{grille\+\_\+deinit(t\+\_\+grille $\ast$grille)}{grille_deinit(t_grille *grille)}}]{\setlength{\rightskip}{0pt plus 5cm}void grille\+\_\+deinit (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+grille} $\ast$}]{grille}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8h_a0d5bf54262c8e487290d1d850ea69232}{}\label{grille_8h_a0d5bf54262c8e487290d1d850ea69232}
+
+
+Dé-\/alloue la grille. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & \+: la grille \\
+\hline
+\end{DoxyParams}
+\index{grille.\+h@{grille.\+h}!grille\+\_\+get@{grille\+\_\+get}}
+\index{grille\+\_\+get@{grille\+\_\+get}!grille.\+h@{grille.\+h}}
+\subsubsection[{\texorpdfstring{grille\+\_\+get(t\+\_\+grille $\ast$grille, I\+N\+D\+E\+X x, I\+N\+D\+E\+X y)}{grille_get(t_grille *grille, INDEX x, INDEX y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+case}$\ast$ grille\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+grille} $\ast$}]{grille, }
+\item[{{\bf I\+N\+D\+EX}}]{x, }
+\item[{{\bf I\+N\+D\+EX}}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8h_a3f0112450a249bbd6a9679dc6a1aaf7a}{}\label{grille_8h_a3f0112450a249bbd6a9679dc6a1aaf7a}
+
+
+Renvoie la case aux coordonnées {\itshape x} et {\itshape y} de la grille. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & \+: la grille \\
+\hline
+{\em x} & \+: coordonnée x \\
+\hline
+{\em y} & \+: coordonnée y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la case aux coordonnées (x, y) sur la grille (peut être N\+U\+LL) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{case_8h}{includes/case.\+h} 
+\end{DoxySeeAlso}
+\index{grille.\+h@{grille.\+h}!grille\+\_\+init@{grille\+\_\+init}}
+\index{grille\+\_\+init@{grille\+\_\+init}!grille.\+h@{grille.\+h}}
+\subsubsection[{\texorpdfstring{grille\+\_\+init(t\+\_\+grille $\ast$grille, I\+N\+D\+E\+X n, unsigned int taille\+\_\+main)}{grille_init(t_grille *grille, INDEX n, unsigned int taille_main)}}]{\setlength{\rightskip}{0pt plus 5cm}int grille\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+grille} $\ast$}]{grille, }
+\item[{{\bf I\+N\+D\+EX}}]{n, }
+\item[{unsigned int}]{taille\+\_\+main}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8h_ad5faeac73cb6b38d9a4a3c379696f15b}{}\label{grille_8h_ad5faeac73cb6b38d9a4a3c379696f15b}
+
+
+Initialises (et alloue) la grille. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & \+: la grille \\
+\hline
+{\em n} & \+: la taille de la grille \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si succès, 0 sinon 
+\end{DoxyReturn}
+\index{grille.\+h@{grille.\+h}!grille\+\_\+insert@{grille\+\_\+insert}}
+\index{grille\+\_\+insert@{grille\+\_\+insert}!grille.\+h@{grille.\+h}}
+\subsubsection[{\texorpdfstring{grille\+\_\+insert(t\+\_\+grille $\ast$grille, t\+\_\+tuile $\ast$tuile, I\+N\+D\+E\+X x, I\+N\+D\+E\+X y)}{grille_insert(t_grille *grille, t_tuile *tuile, INDEX x, INDEX y)}}]{\setlength{\rightskip}{0pt plus 5cm}int grille\+\_\+insert (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+grille} $\ast$}]{grille, }
+\item[{{\bf t\+\_\+tuile} $\ast$}]{tuile, }
+\item[{{\bf I\+N\+D\+EX}}]{x, }
+\item[{{\bf I\+N\+D\+EX}}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8h_a1d4118b6fc12aaa0ce5b38c793b6c658}{}\label{grille_8h_a1d4118b6fc12aaa0ce5b38c793b6c658}
+
+
+Insère la tuile dans la grille aux coordonnées (x, y) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & \+: la grille \\
+\hline
+{\em tuile} & \+: la tuile a inséré \\
+\hline
+{\em x} & \+: coordonnée x \\
+\hline
+{\em y} & \+: coordonnée y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si la tuile a été inséré, 0 sinon 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+\+: Aucuns tests d\textquotesingle{}insertion n\textquotesingle{}est effectué ici! 
+\end{DoxyAttention}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{grille_8h_a43ca13944571564f546e4dbabd09d37a}{grille\+\_\+can\+\_\+insert} 
+
+\hyperlink{tuile_8h}{includes/tuile.\+h} 
+\end{DoxySeeAlso}
+on met à jour les pointeurs sur chaque case de la grille
+
+position du case sur la carte
+
+le case de la tuile
+
+le case precedent sur cette case
+
+on redefinit les pointeurs
+
+on definit le case sur la carte
+
+si c\textquotesingle{}est la 1ere tuile \index{grille.\+h@{grille.\+h}!grille\+\_\+remove@{grille\+\_\+remove}}
+\index{grille\+\_\+remove@{grille\+\_\+remove}!grille.\+h@{grille.\+h}}
+\subsubsection[{\texorpdfstring{grille\+\_\+remove(t\+\_\+grille $\ast$grille, t\+\_\+tuile $\ast$tuile)}{grille_remove(t_grille *grille, t_tuile *tuile)}}]{\setlength{\rightskip}{0pt plus 5cm}int grille\+\_\+remove (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+grille} $\ast$}]{grille, }
+\item[{{\bf t\+\_\+tuile} $\ast$}]{tuile}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8h_af6f8cdb3814fa107abc477cd5159cd3a}{}\label{grille_8h_af6f8cdb3814fa107abc477cd5159cd3a}
+
+
+Supprimes la tuile de la grille. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & \+: la grille \\
+\hline
+{\em tuile} & \+: la tuile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le nombre de tuile retiré (car les tuiles \textquotesingle{}au dessus\textquotesingle{} peuvent être retiré si elles ne passent plus les tests de superposition) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{tuile_8h}{includes/tuile.\+h} 
+\end{DoxySeeAlso}
+si la tuile n\textquotesingle{}est pas sur la carte
+
+on modifie le status de la tuile
+
+liste des tuiles au dessus de celle qu\textquotesingle{}on retire
+
+nombre de tuile distinctes au dessus de la tuile qu\textquotesingle{}on retire
+
+pour chaque case de la tuile
+
+on recupere la case
+
+position du case sur la carte
+
+s\textquotesingle{}il n\textquotesingle{}y a pas de case au dessus, le case en dessous passe au dessus
+
+sinon, s\textquotesingle{}il y a un case au dessus
+
+met à jour les pointeurs
+
+si le case est deja dans la liste, stop
+
+sinon, si c\textquotesingle{}est la 1ère fois qu\textquotesingle{}on rencontre ce case
+
+on l\textquotesingle{}enregistre
+
+on met à jour les pointeurs
+
+il ne reste plus qu\textquotesingle{}a vérifié que toutes les tuiles au dessus de la tuile que l\textquotesingle{}on vient de retirer, vérifie bien les règles d\textquotesingle{}insertion, sinon on les retire recursivement
+
+pour chaque tuile au dessus
+
+on recupere un case \textquotesingle{}au dessus\textquotesingle{}
+
+on vérifie qu\textquotesingle{}il y ait au moins un case d\textquotesingle{}une autre tuile sous cette tuile
+
+il y a au moins un case en dessous, cette tuile ne doit pas être retiré, on passe à la tuile suivante
+
+sinon, cette tuile \textquotesingle{}au dessus\textquotesingle{} n\textquotesingle{}a plus aucun case \textquotesingle{}en dessous\textquotesingle{}, on la retire de la grille récursivement \index{grille.\+h@{grille.\+h}!grille\+\_\+score@{grille\+\_\+score}}
+\index{grille\+\_\+score@{grille\+\_\+score}!grille.\+h@{grille.\+h}}
+\subsubsection[{\texorpdfstring{grille\+\_\+score(t\+\_\+grille $\ast$grille)}{grille_score(t_grille *grille)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int grille\+\_\+score (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+grille} $\ast$}]{grille}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8h_aab9d6dab491bf7f1c6cc73b51e396da5}{}\label{grille_8h_aab9d6dab491bf7f1c6cc73b51e396da5}
+
+
+\+: calcule le score de la grille avec les règles données 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & \+: la grille \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: retourne le score de la grille
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & \+: la grille \\
+\hline
+{\em flags} & \+: les flags \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: retourne le score de la grille 
+\end{DoxyReturn}
+reset des flags de la grille
+
+calcul du score \index{grille.\+h@{grille.\+h}!grille\+\_\+visit@{grille\+\_\+visit}}
+\index{grille\+\_\+visit@{grille\+\_\+visit}!grille.\+h@{grille.\+h}}
+\subsubsection[{\texorpdfstring{grille\+\_\+visit(t\+\_\+grille $\ast$grille, I\+N\+D\+E\+X x, I\+N\+D\+E\+X y, t\+\_\+case\+\_\+type type)}{grille_visit(t_grille *grille, INDEX x, INDEX y, t_case_type type)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int grille\+\_\+visit (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+grille} $\ast$}]{grille, }
+\item[{{\bf I\+N\+D\+EX}}]{x, }
+\item[{{\bf I\+N\+D\+EX}}]{y, }
+\item[{t\+\_\+case\+\_\+type}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8h_a11e4546999671c975996e4d755299b41}{}\label{grille_8h_a11e4546999671c975996e4d755299b41}
+
+
+\+: Comptes le nombre de cases contiguement adjacentes du même type 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & \+: la grille \\
+\hline
+{\em x} & \+: coordonnée x d\textquotesingle{}une case \\
+\hline
+{\em y} & \+: coordonnée y d\textquotesingle{}une case (taille du Lac, taille de la ville...) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAttention}{Attention}
+Les cases contiguement adjacentes sont marqués par le flag \textquotesingle{}C\+A\+S\+E\+\_\+\+V\+I\+S\+I\+T\+ED\textquotesingle{} 
+\end{DoxyAttention}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{case_8h}{case.\+h} 
+\end{DoxySeeAlso}
+si la 1ere case n\textquotesingle{}est pas du bon type, ou qu\textquotesingle{}elle a déjà été visité, renvoie 0
+
+sinon, on crée une file de visite, et on va visité toutes les cases adjacentes du meme type
+
+un buffer pour ajouter des positions du tableau \textquotesingle{}queue\textquotesingle{}
+
+le nombre de cases visitées
+
+le prochain index dans la file
+
+pop le prochain case a visité de la file
+
+un case de plus a été visité
+
+pour chaque cases voisines
+
+on recupere le case voisin
+
+si hors de la carte, pas de case voisin
+
+sinon, si c\textquotesingle{}est le même type, et qu\textquotesingle{}il n\textquotesingle{}a pas deja été visité, on le visite
+
+on l\textquotesingle{}ajoute à la file 

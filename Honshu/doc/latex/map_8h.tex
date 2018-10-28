@@ -1,0 +1,342 @@
+\hypertarget{map_8h}{}\section{/home/rpereira/\+Honshu/includes/map.h File Reference}
+\label{map_8h}\index{/home/rpereira/\+Honshu/includes/map.\+h@{/home/rpereira/\+Honshu/includes/map.\+h}}
+
+
+Data structures and core functions.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}terrain.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}tile.\+h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structs__map}{s\+\_\+map}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structs__map}{s\+\_\+map} {\bfseries t\+\_\+map}\hypertarget{map_8h_a090b96543f067baaf68f41ddd2c024b3}{}\label{map_8h_a090b96543f067baaf68f41ddd2c024b3}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{map_8h_a51626ab31b04e3ff3a68d061ccbc7b9d}{map\+\_\+init} (\hyperlink{structs__map}{t\+\_\+map} $\ast$map, \hyperlink{honshu_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} n)
+\begin{DoxyCompactList}\small\item\em Allocate and initialize the map. \end{DoxyCompactList}\item 
+void \hyperlink{map_8h_ae4962dffadba9b5c1af7b260c04eaa30}{map\+\_\+deinit} (\hyperlink{structs__map}{t\+\_\+map} $\ast$map)
+\begin{DoxyCompactList}\small\item\em De-\/allocate the map. \end{DoxyCompactList}\item 
+\hyperlink{structs__terrain}{t\+\_\+terrain} $\ast$ \hyperlink{map_8h_a3c37fe46e165ba9ba998d51df6f04886}{map\+\_\+get} (\hyperlink{structs__map}{t\+\_\+map} $\ast$map, \hyperlink{honshu_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} x, \hyperlink{honshu_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} y)
+\begin{DoxyCompactList}\small\item\em Get the terrain at given {\itshape x} and {\itshape y} coordinates. \end{DoxyCompactList}\item 
+int \hyperlink{map_8h_acdd2b58125c45a5f62cc5bd6ec59efba}{map\+\_\+can\+\_\+insert} (\hyperlink{structs__map}{t\+\_\+map} $\ast$map, \hyperlink{structs__tile}{t\+\_\+tile} $\ast$tile, \hyperlink{honshu_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} x, \hyperlink{honshu_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} y)
+\begin{DoxyCompactList}\small\item\em Test if the tile can be inserted at the given position within it rotation. \end{DoxyCompactList}\item 
+int \hyperlink{map_8h_a2695983dacd6b421c9503471fc64e186}{map\+\_\+insert} (\hyperlink{structs__map}{t\+\_\+map} $\ast$map, \hyperlink{structs__tile}{t\+\_\+tile} $\ast$tile, \hyperlink{honshu_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} x, \hyperlink{honshu_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} y)
+\begin{DoxyCompactList}\small\item\em Insert the tile on the map. \end{DoxyCompactList}\item 
+int \hyperlink{map_8h_af89ba70849b14ea4d2275cf97964bc4b}{map\+\_\+remove} (\hyperlink{structs__map}{t\+\_\+map} $\ast$map, \hyperlink{structs__tile}{t\+\_\+tile} $\ast$tile)
+\begin{DoxyCompactList}\small\item\em Try to remove the tile from the map,. \end{DoxyCompactList}\item 
+\hyperlink{structs__array}{t\+\_\+array} $\ast$ \hyperlink{map_8h_abd5062a3d26d4b2c3d1b84882f5b887a}{map\+\_\+get\+\_\+village} (\hyperlink{structs__map}{t\+\_\+map} $\ast$map, \hyperlink{honshu_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} x, \hyperlink{honshu_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} y)
+\begin{DoxyCompactList}\small\item\em \+: generate an array which contains the T\+O\+WN associated to the same village \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Data structures and core functions. 
+
+\begin{DoxyAuthor}{Authors}
+Romain P\+E\+R\+E\+I\+RA, Douha O\+U\+R\+I\+MI, Afizullah R\+A\+H\+M\+A\+NY, Guang\+Yue C\+H\+EN 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{map.\+h@{map.\+h}!map\+\_\+can\+\_\+insert@{map\+\_\+can\+\_\+insert}}
+\index{map\+\_\+can\+\_\+insert@{map\+\_\+can\+\_\+insert}!map.\+h@{map.\+h}}
+\subsubsection[{\texorpdfstring{map\+\_\+can\+\_\+insert(t\+\_\+map $\ast$map, t\+\_\+tile $\ast$tile, I\+N\+D\+E\+X x, I\+N\+D\+E\+X y)}{map_can_insert(t_map *map, t_tile *tile, INDEX x, INDEX y)}}]{\setlength{\rightskip}{0pt plus 5cm}int map\+\_\+can\+\_\+insert (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+map} $\ast$}]{map, }
+\item[{{\bf t\+\_\+tile} $\ast$}]{tile, }
+\item[{{\bf I\+N\+D\+EX}}]{x, }
+\item[{{\bf I\+N\+D\+EX}}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8h_acdd2b58125c45a5f62cc5bd6ec59efba}{}\label{map_8h_acdd2b58125c45a5f62cc5bd6ec59efba}
+
+
+Test if the tile can be inserted at the given position within it rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & \+: the map instance \\
+\hline
+{\em tile} & \+: the tile to be inserted \\
+\hline
+{\em x} & \+: the x coordinate on the map \\
+\hline
+{\em y} & \+: the y coordinate on the map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the tile can be inserted, 0 else 
+\end{DoxyReturn}
+booléan afin de savoir si cette tuile en recouvre au moins une autre
+
+liste des tuiles en dessous de celle qu\textquotesingle{}on insert
+
+nombre de tuile distinctes sous la tuile qu\textquotesingle{}on insère
+
+upper\mbox{[}i\mbox{]} est le nombre de fois que la tuile qu\textquotesingle{}on insère apparait \textquotesingle{}au dessus \textquotesingle{} unders\mbox{[}i\mbox{]}
+
+on vérifie que chaque case de la tuile respecte les regles d\textquotesingle{}insertion
+
+si hors de la carte, alors insertion impossible
+
+on recupere le terrain en dessous
+
+s\textquotesingle{}il n\textquotesingle{}y en a pas, on continue de vérifier les suivant
+
+si c\textquotesingle{}est un lac, insertion impossible
+
+sinon, il y a une tuile en dessous
+
+on enregistre la tuile
+
+pour chaquue terrain déjà trouvé \textquotesingle{}en dessous\textquotesingle{}
+
+si c\textquotesingle{}est le meme terrain
+
+on incrémente le nombre de case recouverte
+
+sinon, si c\textquotesingle{}est la 1ère fois qu\textquotesingle{}on rencontre ce terrain en dessous
+
+on l\textquotesingle{}enregistre, et on initialise le compteur
+
+s\textquotesingle{}il n\textquotesingle{}y a aucunes autres tuiles en dessous de l\textquotesingle{}insertion...
+
+sinon, pour chaque tuile \textquotesingle{}en dessous\textquotesingle{} de celle qu\textquotesingle{}on insère ...
+
+si plus de 6 terrains sont recouverts, alors la tuile est entierement recouverte\+: insertion impossible
+
+sinon, tous les tests sont passés \index{map.\+h@{map.\+h}!map\+\_\+deinit@{map\+\_\+deinit}}
+\index{map\+\_\+deinit@{map\+\_\+deinit}!map.\+h@{map.\+h}}
+\subsubsection[{\texorpdfstring{map\+\_\+deinit(t\+\_\+map $\ast$map)}{map_deinit(t_map *map)}}]{\setlength{\rightskip}{0pt plus 5cm}void map\+\_\+deinit (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+map} $\ast$}]{map}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8h_ae4962dffadba9b5c1af7b260c04eaa30}{}\label{map_8h_ae4962dffadba9b5c1af7b260c04eaa30}
+
+
+De-\/allocate the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & \+: the map \\
+\hline
+\end{DoxyParams}
+\index{map.\+h@{map.\+h}!map\+\_\+get@{map\+\_\+get}}
+\index{map\+\_\+get@{map\+\_\+get}!map.\+h@{map.\+h}}
+\subsubsection[{\texorpdfstring{map\+\_\+get(t\+\_\+map $\ast$map, I\+N\+D\+E\+X x, I\+N\+D\+E\+X y)}{map_get(t_map *map, INDEX x, INDEX y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+terrain}$\ast$ map\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+map} $\ast$}]{map, }
+\item[{{\bf I\+N\+D\+EX}}]{x, }
+\item[{{\bf I\+N\+D\+EX}}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8h_a3c37fe46e165ba9ba998d51df6f04886}{}\label{map_8h_a3c37fe46e165ba9ba998d51df6f04886}
+
+
+Get the terrain at given {\itshape x} and {\itshape y} coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & \+: the map instance \\
+\hline
+{\em x} & \+: x coordinates of the terrain \\
+\hline
+{\em y} & \+: y coordinates of the terrain \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the terrain which is set at (x, y), if no terrain are set, N\+U\+LL is returned 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{terrain_8h}{includes/terrain.\+h} 
+\end{DoxySeeAlso}
+\index{map.\+h@{map.\+h}!map\+\_\+get\+\_\+village@{map\+\_\+get\+\_\+village}}
+\index{map\+\_\+get\+\_\+village@{map\+\_\+get\+\_\+village}!map.\+h@{map.\+h}}
+\subsubsection[{\texorpdfstring{map\+\_\+get\+\_\+village(t\+\_\+map $\ast$map, I\+N\+D\+E\+X x, I\+N\+D\+E\+X y)}{map_get_village(t_map *map, INDEX x, INDEX y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+array}$\ast$ map\+\_\+get\+\_\+village (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+map} $\ast$}]{map, }
+\item[{{\bf I\+N\+D\+EX}}]{x, }
+\item[{{\bf I\+N\+D\+EX}}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8h_abd5062a3d26d4b2c3d1b84882f5b887a}{}\label{map_8h_abd5062a3d26d4b2c3d1b84882f5b887a}
+
+
+\+: generate an array which contains the T\+O\+WN associated to the same village 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & \+: the map instance \\
+\hline
+{\em x} & \+: the x coordinate from where to start the research \\
+\hline
+{\em y} & \+: the y coordinate from where to start the research \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of \textquotesingle{}T\+\_\+\+T\+O\+WN\textquotesingle{} terrains, which together forms a village. 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+the returned array should be deleted later on via \textquotesingle{}array\+\_\+delete\textquotesingle{} 
+\end{DoxyAttention}
+si la 1ere case n\textquotesingle{}est pas une ville, renvoie 0
+
+sinon, on crée une file de visite, et on va visité toutes les cases adjacentes de type \textquotesingle{}T\+\_\+\+T\+O\+WN\textquotesingle{}
+
+prépare la file
+
+pop le prochain terrain a visité de la file
+
+pour chaque cases voisines
+
+on recupere le terrain voisin
+
+s\textquotesingle{}il a deja été visité, on passe au voisin suivant
+
+sinon, on le visite
+
+si ce n\textquotesingle{}est pas une ville, on passe au voisin suivant
+
+on l\textquotesingle{}ajoute à la file
+
+libère la mémoire \index{map.\+h@{map.\+h}!map\+\_\+init@{map\+\_\+init}}
+\index{map\+\_\+init@{map\+\_\+init}!map.\+h@{map.\+h}}
+\subsubsection[{\texorpdfstring{map\+\_\+init(t\+\_\+map $\ast$map, I\+N\+D\+E\+X n)}{map_init(t_map *map, INDEX n)}}]{\setlength{\rightskip}{0pt plus 5cm}int map\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+map} $\ast$}]{map, }
+\item[{{\bf I\+N\+D\+EX}}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8h_a51626ab31b04e3ff3a68d061ccbc7b9d}{}\label{map_8h_a51626ab31b04e3ff3a68d061ccbc7b9d}
+
+
+Allocate and initialize the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & \+: the map \\
+\hline
+{\em n} & \+: size of the map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the map was initialized, 0 else. 
+\end{DoxyReturn}
+\index{map.\+h@{map.\+h}!map\+\_\+insert@{map\+\_\+insert}}
+\index{map\+\_\+insert@{map\+\_\+insert}!map.\+h@{map.\+h}}
+\subsubsection[{\texorpdfstring{map\+\_\+insert(t\+\_\+map $\ast$map, t\+\_\+tile $\ast$tile, I\+N\+D\+E\+X x, I\+N\+D\+E\+X y)}{map_insert(t_map *map, t_tile *tile, INDEX x, INDEX y)}}]{\setlength{\rightskip}{0pt plus 5cm}int map\+\_\+insert (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+map} $\ast$}]{map, }
+\item[{{\bf t\+\_\+tile} $\ast$}]{tile, }
+\item[{{\bf I\+N\+D\+EX}}]{x, }
+\item[{{\bf I\+N\+D\+EX}}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8h_a2695983dacd6b421c9503471fc64e186}{}\label{map_8h_a2695983dacd6b421c9503471fc64e186}
+
+
+Insert the tile on the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & \+: the map instance \\
+\hline
+{\em tile} & \+: the tile to insert \\
+\hline
+{\em x} & \+: x coords where the tile should be set on the map \\
+\hline
+{\em y} & \+: y coords where the tile should be set on the map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the tile could be added, 0 elseway 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+\+: No insertion test are done here! 
+\end{DoxyAttention}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{map_8h_acdd2b58125c45a5f62cc5bd6ec59efba}{map\+\_\+can\+\_\+insert} 
+
+\hyperlink{tile_8h}{includes/tile.\+h} 
+\end{DoxySeeAlso}
+on vérifie que chaque case de la tuile respecte les regles d\textquotesingle{}insertion
+
+position du terrain sur la carte
+
+le terrain de la tuile
+
+le terrain precedent sur cette case
+
+on redefinit les pointeurs
+
+on definit le terrain sur la carte \index{map.\+h@{map.\+h}!map\+\_\+remove@{map\+\_\+remove}}
+\index{map\+\_\+remove@{map\+\_\+remove}!map.\+h@{map.\+h}}
+\subsubsection[{\texorpdfstring{map\+\_\+remove(t\+\_\+map $\ast$map, t\+\_\+tile $\ast$tile)}{map_remove(t_map *map, t_tile *tile)}}]{\setlength{\rightskip}{0pt plus 5cm}int map\+\_\+remove (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+map} $\ast$}]{map, }
+\item[{{\bf t\+\_\+tile} $\ast$}]{tile}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8h_af89ba70849b14ea4d2275cf97964bc4b}{}\label{map_8h_af89ba70849b14ea4d2275cf97964bc4b}
+
+
+Try to remove the tile from the map,. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & \+: the map instance \\
+\hline
+{\em tile} & \+: the tile to remove \\
+\hline
+{\em x} & \+: x coords where the tile should be set on the map \\
+\hline
+{\em y} & \+: y coords where the tile should be set on the map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of tiles removed from the map. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{tile_8h}{includes/tile.\+h} 
+\end{DoxySeeAlso}
+on modifie le status de la tuile
+
+liste des tuiles au dessus de celle qu\textquotesingle{}on retire
+
+nombre de tuile distinctes au dessus de la tuile qu\textquotesingle{}on retire
+
+on vérifie que chaque case de la tuile respecte les regles d\textquotesingle{}insertion
+
+on recupere la case
+
+position du terrain sur la carte
+
+s\textquotesingle{}il n\textquotesingle{}y a pas de terrain au dessus, le terrain en dessous passe au dessus
+
+sinon, s\textquotesingle{}il y a un terrain au dessus
+
+met à jour les pointeurs
+
+on l\textquotesingle{}enregistre dans la liste
+
+si le terrain est deja dans la liste, stop
+
+sinon, si c\textquotesingle{}est la 1ère fois qu\textquotesingle{}on rencontre ce terrain
+
+on l\textquotesingle{}enregistre
+
+on met à jour les pointeurs
+
+il ne reste plus qu\textquotesingle{}a vérifié que tous les terrains dans la liste vérifie bien les règles d\textquotesingle{}insertion, sinon on les sort
+
+on recupere un terrain \textquotesingle{}au dessus\textquotesingle{}
+
+on vérifie qu\textquotesingle{}il y ait au moins un terrain d\textquotesingle{}une autre tuile sous cette tuile
+
+il y a au moins un terrain en dessous, on passe à la case suivante
+
+sinon, cette tuile \textquotesingle{}au dessus\textquotesingle{} n\textquotesingle{}a plus aucun terrain \textquotesingle{}en dessous\textquotesingle{}, on la retire de la grille récursivement 

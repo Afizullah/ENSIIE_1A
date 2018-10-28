@@ -1,0 +1,78 @@
+\hypertarget{terrain_8h}{}\section{/home/rpereira/\+Honshu/includes/terrain.h File Reference}
+\label{terrain_8h}\index{/home/rpereira/\+Honshu/includes/terrain.\+h@{/home/rpereira/\+Honshu/includes/terrain.\+h}}
+
+
+Terrain-\/relative functions.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structs__terrain}{s\+\_\+terrain}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structs__terrain}{s\+\_\+terrain} {\bfseries t\+\_\+terrain}\hypertarget{terrain_8h_a649b18e8e52acf45f51e7d42a0691146}{}\label{terrain_8h_a649b18e8e52acf45f51e7d42a0691146}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries e\+\_\+terrains} \{ \\*
+{\bfseries T\+\_\+\+U\+N\+K\+N\+O\+WN} = \textquotesingle{}?\textquotesingle{}, 
+\\*
+{\bfseries T\+\_\+\+P\+L\+A\+IN} = \textquotesingle{}P\textquotesingle{}, 
+\\*
+{\bfseries T\+\_\+\+F\+O\+R\+E\+ST} = \textquotesingle{}F\textquotesingle{}, 
+\\*
+{\bfseries T\+\_\+\+L\+AC} = \textquotesingle{}L\textquotesingle{}, 
+\\*
+{\bfseries T\+\_\+\+T\+O\+WN} = \textquotesingle{}V\textquotesingle{}, 
+\\*
+{\bfseries T\+\_\+\+R\+E\+S\+S\+O\+U\+R\+CE} = \textquotesingle{}R\textquotesingle{}, 
+\\*
+{\bfseries T\+\_\+\+F\+A\+C\+T\+O\+RY} = \textquotesingle{}U\textquotesingle{}
+ \}\hypertarget{terrain_8h_a561d284c04b5c0a5166f2980ee9c642e}{}\label{terrain_8h_a561d284c04b5c0a5166f2980ee9c642e}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{terrain_8h_abe245001dbdddb28881e9ef97b88273f}{terrain\+\_\+init} (\hyperlink{structs__terrain}{t\+\_\+terrain} $\ast$terrain, char type)
+\begin{DoxyCompactList}\small\item\em initialize a terrain \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Terrain-\/relative functions. 
+
+\begin{DoxyAuthor}{Authors}
+Romain P\+E\+R\+E\+I\+RA, Douha O\+U\+R\+I\+MI, Afizullah R\+A\+H\+M\+A\+NY, Guang\+Yue C\+H\+EN 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{terrain.\+h@{terrain.\+h}!terrain\+\_\+init@{terrain\+\_\+init}}
+\index{terrain\+\_\+init@{terrain\+\_\+init}!terrain.\+h@{terrain.\+h}}
+\subsubsection[{\texorpdfstring{terrain\+\_\+init(t\+\_\+terrain $\ast$terrain, char type)}{terrain_init(t_terrain *terrain, char type)}}]{\setlength{\rightskip}{0pt plus 5cm}void terrain\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+terrain} $\ast$}]{terrain, }
+\item[{char}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{terrain_8h_abe245001dbdddb28881e9ef97b88273f}{}\label{terrain_8h_abe245001dbdddb28881e9ef97b88273f}
+
+
+initialize a terrain 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terrain} & \+: the terrain instance \\
+\hline
+{\em type} & \+: \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+enum e\+\_\+terrains 
+\end{DoxySeeAlso}

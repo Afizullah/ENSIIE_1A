@@ -1,0 +1,65 @@
+16
+0
+P R
+L P
+R V
+1
+V V
+R F
+P L
+2
+P L
+V L
+P F
+3
+R R
+P P
+F V
+4
+R U
+R V
+P V
+5
+V P
+L V
+P R
+6
+R F
+U P
+F U
+7
+F U
+F R
+U L
+8
+U V
+R V
+F U
+9
+R P
+U P
+F V
+10
+R L
+R P
+V L
+11
+L L
+L F
+P V
+12
+P F
+P F
+V U
+13
+F F
+P P
+R F
+14
+V F
+U P
+F U
+15
+R U
+U P
+V V

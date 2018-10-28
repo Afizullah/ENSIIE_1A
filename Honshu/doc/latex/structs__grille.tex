@@ -1,0 +1,86 @@
+\hypertarget{structs__grille}{}\section{s\+\_\+grille Struct Reference}
+\label{structs__grille}\index{s\+\_\+grille@{s\+\_\+grille}}
+
+
+{\ttfamily \#include $<$grille.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{types_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} \hyperlink{structs__grille_a09b07d21d4a001c90c4f4f8025ac3965}{n}
+\item 
+\hyperlink{structs__case}{t\+\_\+case} $\ast$$\ast$ \hyperlink{structs__grille_a0c83208ed3489d20fb32a4bd8269328e}{cases}
+\item 
+\hyperlink{structs__tuile}{t\+\_\+tuile} $\ast$ \hyperlink{structs__grille_a80d9aee68750a4c4c5cae8185c74b7b1}{tuiles}
+\item 
+unsigned int \hyperlink{structs__grille_a0f709b2f457ab146ea70a4a733d5a69d}{nb\+\_\+tuiles}
+\item 
+unsigned int \hyperlink{structs__grille_ae2c7873819c9dc229c5528c208bd0d30}{nb\+\_\+tuiles\+\_\+main}
+\item 
+unsigned int \hyperlink{structs__grille_a5d8aed076ffe76bf0d7086d229d4ab24}{nb\+\_\+tuiles\+\_\+grille}
+\item 
+\hyperlink{types_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} $\ast$ \hyperlink{structs__grille_afa494c65bda9a2ab166fcf495911f919}{queue}
+\item 
+\hyperlink{types_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} \hyperlink{structs__grille_adc46f40aa2b1eb2bf96885c55b497f4e}{minX}
+\item 
+\hyperlink{types_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} {\bfseries minY}\hypertarget{structs__grille_ae2f33801d59bf0d79279f661bf0dff7b}{}\label{structs__grille_ae2f33801d59bf0d79279f661bf0dff7b}
+
+\item 
+\hyperlink{types_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} \hyperlink{structs__grille_a08e437d260f36932a3f1514d778a401a}{maxX}
+\item 
+\hyperlink{types_8h_ac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX} {\bfseries maxY}\hypertarget{structs__grille_af2693646d5b9069e09e3ead3dc9d947b}{}\label{structs__grille_af2693646d5b9069e09e3ead3dc9d947b}
+
+\item 
+\hyperlink{types_8h_aec93e83855ac17c3c25c55c37ca186dd}{B\+Y\+TE} \hyperlink{structs__grille_aea8fdcb6be083042616784eaa97b45be}{flags}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+La grille n$\ast$n de jeu sur laquelle on pose les tuiles \begin{DoxyAttention}{Attention}
+\+: si une tuile est retiré, \textquotesingle{}minX\textquotesingle{}, \textquotesingle{}minY\textquotesingle{}, \textquotesingle{}maxX\textquotesingle{}, \textquotesingle{}maxY\textquotesingle{} reste inchangé. 
+\end{DoxyAttention}
+
+
+\subsection{Field Documentation}
+\index{s\+\_\+grille@{s\+\_\+grille}!cases@{cases}}
+\index{cases@{cases}!s\+\_\+grille@{s\+\_\+grille}}
+\subsubsection[{\texorpdfstring{cases}{cases}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+case}$\ast$$\ast$ s\+\_\+grille\+::cases}\hypertarget{structs__grille_a0c83208ed3489d20fb32a4bd8269328e}{}\label{structs__grille_a0c83208ed3489d20fb32a4bd8269328e}
+tableau à 1 dimension de \textquotesingle{}t\+\_\+case $\ast$\textquotesingle{}, contenant\+: les cases de la grille
+
+l\textquotesingle{}indicage est\+:
+
+0 1 ... n n+1 n+2 ... 2n-\/1 ... ... n$\ast$n-\/1 \index{s\+\_\+grille@{s\+\_\+grille}!flags@{flags}}
+\index{flags@{flags}!s\+\_\+grille@{s\+\_\+grille}}
+\subsubsection[{\texorpdfstring{flags}{flags}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+Y\+TE} s\+\_\+grille\+::flags}\hypertarget{structs__grille_aea8fdcb6be083042616784eaa97b45be}{}\label{structs__grille_aea8fdcb6be083042616784eaa97b45be}
+les flags \index{s\+\_\+grille@{s\+\_\+grille}!maxX@{maxX}}
+\index{maxX@{maxX}!s\+\_\+grille@{s\+\_\+grille}}
+\subsubsection[{\texorpdfstring{maxX}{maxX}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+N\+D\+EX} s\+\_\+grille\+::maxX}\hypertarget{structs__grille_a08e437d260f36932a3f1514d778a401a}{}\label{structs__grille_a08e437d260f36932a3f1514d778a401a}
+position la plus en bas à droite où une tuile a jamais été inséré \index{s\+\_\+grille@{s\+\_\+grille}!minX@{minX}}
+\index{minX@{minX}!s\+\_\+grille@{s\+\_\+grille}}
+\subsubsection[{\texorpdfstring{minX}{minX}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+N\+D\+EX} s\+\_\+grille\+::minX}\hypertarget{structs__grille_adc46f40aa2b1eb2bf96885c55b497f4e}{}\label{structs__grille_adc46f40aa2b1eb2bf96885c55b497f4e}
+position la plus en haut à gauche où une tuile a jamais été inséré \index{s\+\_\+grille@{s\+\_\+grille}!n@{n}}
+\index{n@{n}!s\+\_\+grille@{s\+\_\+grille}}
+\subsubsection[{\texorpdfstring{n}{n}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+N\+D\+EX} s\+\_\+grille\+::n}\hypertarget{structs__grille_a09b07d21d4a001c90c4f4f8025ac3965}{}\label{structs__grille_a09b07d21d4a001c90c4f4f8025ac3965}
+taille de la grille \index{s\+\_\+grille@{s\+\_\+grille}!nb\+\_\+tuiles@{nb\+\_\+tuiles}}
+\index{nb\+\_\+tuiles@{nb\+\_\+tuiles}!s\+\_\+grille@{s\+\_\+grille}}
+\subsubsection[{\texorpdfstring{nb\+\_\+tuiles}{nb_tuiles}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int s\+\_\+grille\+::nb\+\_\+tuiles}\hypertarget{structs__grille_a0f709b2f457ab146ea70a4a733d5a69d}{}\label{structs__grille_a0f709b2f457ab146ea70a4a733d5a69d}
+taille du tableau \textquotesingle{}tuiles\textquotesingle{} \index{s\+\_\+grille@{s\+\_\+grille}!nb\+\_\+tuiles\+\_\+grille@{nb\+\_\+tuiles\+\_\+grille}}
+\index{nb\+\_\+tuiles\+\_\+grille@{nb\+\_\+tuiles\+\_\+grille}!s\+\_\+grille@{s\+\_\+grille}}
+\subsubsection[{\texorpdfstring{nb\+\_\+tuiles\+\_\+grille}{nb_tuiles_grille}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int s\+\_\+grille\+::nb\+\_\+tuiles\+\_\+grille}\hypertarget{structs__grille_a5d8aed076ffe76bf0d7086d229d4ab24}{}\label{structs__grille_a5d8aed076ffe76bf0d7086d229d4ab24}
+nombre de tuiles sur la grille \index{s\+\_\+grille@{s\+\_\+grille}!nb\+\_\+tuiles\+\_\+main@{nb\+\_\+tuiles\+\_\+main}}
+\index{nb\+\_\+tuiles\+\_\+main@{nb\+\_\+tuiles\+\_\+main}!s\+\_\+grille@{s\+\_\+grille}}
+\subsubsection[{\texorpdfstring{nb\+\_\+tuiles\+\_\+main}{nb_tuiles_main}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int s\+\_\+grille\+::nb\+\_\+tuiles\+\_\+main}\hypertarget{structs__grille_ae2c7873819c9dc229c5528c208bd0d30}{}\label{structs__grille_ae2c7873819c9dc229c5528c208bd0d30}
+nombre de tuiles dans la main \index{s\+\_\+grille@{s\+\_\+grille}!queue@{queue}}
+\index{queue@{queue}!s\+\_\+grille@{s\+\_\+grille}}
+\subsubsection[{\texorpdfstring{queue}{queue}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+N\+D\+EX}$\ast$ s\+\_\+grille\+::queue}\hypertarget{structs__grille_afa494c65bda9a2ab166fcf495911f919}{}\label{structs__grille_afa494c65bda9a2ab166fcf495911f919}
+la file qui permet de visiter les cases (grille\+\_\+visit) \index{s\+\_\+grille@{s\+\_\+grille}!tuiles@{tuiles}}
+\index{tuiles@{tuiles}!s\+\_\+grille@{s\+\_\+grille}}
+\subsubsection[{\texorpdfstring{tuiles}{tuiles}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+tuile}$\ast$ s\+\_\+grille\+::tuiles}\hypertarget{structs__grille_a80d9aee68750a4c4c5cae8185c74b7b1}{}\label{structs__grille_a80d9aee68750a4c4c5cae8185c74b7b1}
+les tuiles (dans la main ET sur la carte) (\begin{DoxySeeAlso}{See also}
+\hyperlink{tuile_8h}{tuile.\+h}) 
+\end{DoxySeeAlso}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/rpereira/\+Honshu/includes/\hyperlink{grille_8h}{grille.\+h}\end{DoxyCompactItemize}

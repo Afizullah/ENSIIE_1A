@@ -1,0 +1,77 @@
+19
+0
+U P
+V L
+P V
+1
+F R
+P L
+V R
+2
+R L
+P L
+V U
+3
+L V
+P P
+P P
+4
+P F
+U F
+U R
+5
+F V
+R L
+U L
+6
+U R
+U R
+P L
+7
+L R
+V P
+F R
+8
+U F
+L V
+U P
+9
+R U
+F F
+P U
+10
+V L
+L P
+R U
+11
+L L
+V F
+P L
+12
+L P
+R U
+F V
+13
+F R
+R V
+L V
+14
+F P
+P F
+U F
+15
+P P
+F P
+P V
+16
+U F
+U P
+P V
+17
+L L
+L F
+U F
+18
+R F
+U F
+L F

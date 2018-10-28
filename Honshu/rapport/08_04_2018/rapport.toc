@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}Rapport lot B}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Interfaces 'affichage.h' et 'entree.h'}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}1\IeC {\`e}re impl\IeC {\'e}mentation}{3}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Partie affichage}{3}{subsubsection.2.2.1}
+\contentsline {paragraph}{affichage.h}{3}{section*.3}
+\contentsline {subsubsection}{\numberline {2.2.2}Partie entr\IeC {\'e}e}{3}{subsubsection.2.2.2}
+\contentsline {paragraph}{entree.h}{3}{section*.4}
+\contentsline {subsection}{\numberline {2.3}2\IeC {\`e}me impl\IeC {\'e}mentation avec ncurses}{3}{subsection.2.3}
+\contentsline {paragraph}{Affiche le jeu:}{3}{section*.5}
+\contentsline {subsubsection}{\numberline {2.3.1}Partie affichage}{4}{subsubsection.2.3.1}
+\contentsline {paragraph}{Affiche le jeu:}{4}{section*.6}
+\contentsline {paragraph}{Affiche toutes les tuiles}{4}{section*.7}
+\contentsline {paragraph}{Affiche une tuile:}{4}{section*.8}
+\contentsline {paragraph}{Affiche le grille:}{4}{section*.9}
+\contentsline {subsubsection}{\numberline {2.3.2}Partie entr\IeC {\'e}e}{6}{subsubsection.2.3.2}
+\contentsline {section}{\numberline {3}Conclusion}{6}{section.3}

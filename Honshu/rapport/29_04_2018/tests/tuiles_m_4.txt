@@ -1,0 +1,21 @@
+5
+0
+V U
+V V
+L R
+1
+R R
+L U
+V U
+2
+F R
+V F
+F U
+3
+U U
+L F
+F R
+4
+L U
+L U
+R V

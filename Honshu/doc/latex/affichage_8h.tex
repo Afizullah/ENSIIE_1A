@@ -1,0 +1,89 @@
+\hypertarget{affichage_8h}{}\section{/home/rpereira/\+Honshu/includes/affichage.h File Reference}
+\label{affichage_8h}\index{/home/rpereira/\+Honshu/includes/affichage.\+h@{/home/rpereira/\+Honshu/includes/affichage.\+h}}
+
+
+Fonctions d\textquotesingle{}affichage de la grille.  
+
+
+{\ttfamily \#include \char`\"{}honshu.\+h\char`\"{}}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structs__honshu}{s\+\_\+honshu} {\bfseries t\+\_\+hs}\hypertarget{affichage_8h_a40e306f6583629c9ab62856566096d4c}{}\label{affichage_8h_a40e306f6583629c9ab62856566096d4c}
+
+\item 
+typedef struct \hyperlink{structs__afficheur}{s\+\_\+afficheur} {\bfseries t\+\_\+afficheur}\hypertarget{affichage_8h_aaa63ebd995daee7542cd722f058919ab}{}\label{affichage_8h_aaa63ebd995daee7542cd722f058919ab}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structs__afficheur}{t\+\_\+afficheur} $\ast$ \hyperlink{affichage_8h_a66f407ea110cab22951beb409ea30f94}{afficheur\+\_\+new} (\hyperlink{structs__honshu}{t\+\_\+hs} $\ast$hs)
+\begin{DoxyCompactList}\small\item\em initialise l\textquotesingle{}afficheur \end{DoxyCompactList}\item 
+void \hyperlink{affichage_8h_a89ff848e9f293a92bc3f453541a2ca70}{afficheur\+\_\+delete} (\hyperlink{structs__afficheur}{t\+\_\+afficheur} $\ast$afficheur)
+\begin{DoxyCompactList}\small\item\em de-\/initialise l\textquotesingle{}afficheur \end{DoxyCompactList}\item 
+void \hyperlink{affichage_8h_a6dfc5243015db35d8a50cb79e875bc7a}{afficher} (\hyperlink{structs__honshu}{t\+\_\+hs} $\ast$hs)
+\begin{DoxyCompactList}\small\item\em affiche l\textquotesingle{}état actuel du jeu \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fonctions d\textquotesingle{}affichage de la grille. 
+
+\begin{DoxyAuthor}{Authors}
+Romain P\+E\+R\+E\+I\+RA, Douha O\+U\+R\+I\+MI, Afizullah R\+A\+H\+M\+A\+NY, Guang\+Yue C\+H\+EN 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{affichage.\+h@{affichage.\+h}!afficher@{afficher}}
+\index{afficher@{afficher}!affichage.\+h@{affichage.\+h}}
+\subsubsection[{\texorpdfstring{afficher(t\+\_\+hs $\ast$hs)}{afficher(t_hs *hs)}}]{\setlength{\rightskip}{0pt plus 5cm}void afficher (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+hs} $\ast$}]{hs}
+\end{DoxyParamCaption}
+)}\hypertarget{affichage_8h_a6dfc5243015db35d8a50cb79e875bc7a}{}\label{affichage_8h_a6dfc5243015db35d8a50cb79e875bc7a}
+
+
+affiche l\textquotesingle{}état actuel du jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em honshu} & \+: l\textquotesingle{}instance du jeu \\
+\hline
+\end{DoxyParams}
+\index{affichage.\+h@{affichage.\+h}!afficheur\+\_\+delete@{afficheur\+\_\+delete}}
+\index{afficheur\+\_\+delete@{afficheur\+\_\+delete}!affichage.\+h@{affichage.\+h}}
+\subsubsection[{\texorpdfstring{afficheur\+\_\+delete(t\+\_\+afficheur $\ast$afficheur)}{afficheur_delete(t_afficheur *afficheur)}}]{\setlength{\rightskip}{0pt plus 5cm}void afficheur\+\_\+delete (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+afficheur} $\ast$}]{afficheur}
+\end{DoxyParamCaption}
+)}\hypertarget{affichage_8h_a89ff848e9f293a92bc3f453541a2ca70}{}\label{affichage_8h_a89ff848e9f293a92bc3f453541a2ca70}
+
+
+de-\/initialise l\textquotesingle{}afficheur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em afficheur} & \+: l\textquotesingle{}instance de l\textquotesingle{}afficheur \\
+\hline
+\end{DoxyParams}
+\index{affichage.\+h@{affichage.\+h}!afficheur\+\_\+new@{afficheur\+\_\+new}}
+\index{afficheur\+\_\+new@{afficheur\+\_\+new}!affichage.\+h@{affichage.\+h}}
+\subsubsection[{\texorpdfstring{afficheur\+\_\+new(t\+\_\+hs $\ast$hs)}{afficheur_new(t_hs *hs)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+afficheur}$\ast$ afficheur\+\_\+new (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+hs} $\ast$}]{hs}
+\end{DoxyParamCaption}
+)}\hypertarget{affichage_8h_a66f407ea110cab22951beb409ea30f94}{}\label{affichage_8h_a66f407ea110cab22951beb409ea30f94}
+
+
+initialise l\textquotesingle{}afficheur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hs} & \+: l\textquotesingle{}instance du jeu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un nouvel afficheur (ou N\+U\+LL) 
+\end{DoxyReturn}
+initialisation de ncurses 

@@ -1,0 +1,145 @@
+\hypertarget{tile_8h}{}\section{/home/rpereira/\+Honshu/includes/tile.h File Reference}
+\label{tile_8h}\index{/home/rpereira/\+Honshu/includes/tile.\+h@{/home/rpereira/\+Honshu/includes/tile.\+h}}
+
+
+Tile-\/relative functions.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}terrain.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}array.\+h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structs__tile}{s\+\_\+tile}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structs__tile}{s\+\_\+tile} {\bfseries t\+\_\+tile}\hypertarget{tile_8h_ae38023bdbd5c35112d00fcbf158f3c71}{}\label{tile_8h_ae38023bdbd5c35112d00fcbf158f3c71}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{tile_8h_a1fe4cded84ddee1e53a7d351ee0ef77f}{e\+\_\+rotations} \{ \\*
+\hyperlink{tile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fad0611de6f28d4a9c9eac959f5344698e}{N\+O\+R\+TH}, 
+\\*
+\hyperlink{tile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fab5b3793b961949c817c7c0d99c05dad7}{E\+A\+ST}, 
+\\*
+\hyperlink{tile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fa8ef5c0bce69283a9986011a63eea8a6b}{S\+O\+U\+TH}, 
+\\*
+\hyperlink{tile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fae9449e8683a8199dad36b07a63b2f523}{W\+E\+ST}
+ \}
+\item 
+enum {\bfseries e\+\_\+tile\+\_\+status} \{ \\*
+{\bfseries T\+I\+L\+E\+\_\+\+I\+N\+\_\+\+H\+A\+ND}, 
+\\*
+{\bfseries T\+I\+L\+E\+\_\+\+O\+N\+\_\+\+M\+AP}
+ \}\hypertarget{tile_8h_a21990fb369cb148370b0c6e881c15b5e}{}\label{tile_8h_a21990fb369cb148370b0c6e881c15b5e}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{tile_8h_ac3f625a8ba9b89eb1ef22a3a4d38bda0}{tile\+\_\+init} (\hyperlink{structs__tile}{t\+\_\+tile} $\ast$tile)
+\begin{DoxyCompactList}\small\item\em Initialise the tile. \end{DoxyCompactList}\item 
+int \hyperlink{tile_8h_aa1be99c95c470ac302ccb8597ef5a760}{tile\+\_\+set\+\_\+terrain} (\hyperlink{structs__tile}{t\+\_\+tile} $\ast$tile, enum e\+\_\+terrains terrain, \hyperlink{array_8h_aec93e83855ac17c3c25c55c37ca186dd}{B\+Y\+TE} index)
+\begin{DoxyCompactList}\small\item\em set a terrain on the tile \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{array_8h_aec93e83855ac17c3c25c55c37ca186dd}{B\+Y\+TE} \hyperlink{tile_8h_a6d05df020c7f8322630b0aadaa3ba3ea}{T\+E\+R\+R\+A\+I\+N\+\_\+\+O\+F\+F\+S\+ET} \mbox{[}4\mbox{]}\mbox{[}6\mbox{]}\mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Tile-\/relative functions. 
+
+\begin{DoxyAuthor}{Authors}
+Romain P\+E\+R\+E\+I\+RA, Douha O\+U\+R\+I\+MI, Afizullah R\+A\+H\+M\+A\+NY, Guang\+Yue C\+H\+EN 
+\end{DoxyAuthor}
+
+
+\subsection{Enumeration Type Documentation}
+\index{tile.\+h@{tile.\+h}!e\+\_\+rotations@{e\+\_\+rotations}}
+\index{e\+\_\+rotations@{e\+\_\+rotations}!tile.\+h@{tile.\+h}}
+\subsubsection[{\texorpdfstring{e\+\_\+rotations}{e_rotations}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf e\+\_\+rotations}}\hypertarget{tile_8h_a1fe4cded84ddee1e53a7d351ee0ef77f}{}\label{tile_8h_a1fe4cded84ddee1e53a7d351ee0ef77f}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+O\+R\+TH@{N\+O\+R\+TH}!tile.\+h@{tile.\+h}}\index{tile.\+h@{tile.\+h}!N\+O\+R\+TH@{N\+O\+R\+TH}}\item[{\em 
+N\+O\+R\+TH\hypertarget{tile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fad0611de6f28d4a9c9eac959f5344698e}{}\label{tile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fad0611de6f28d4a9c9eac959f5344698e}
+}]0 1
+
+2 3
+
+4 5 \index{E\+A\+ST@{E\+A\+ST}!tile.\+h@{tile.\+h}}\index{tile.\+h@{tile.\+h}!E\+A\+ST@{E\+A\+ST}}\item[{\em 
+E\+A\+ST\hypertarget{tile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fab5b3793b961949c817c7c0d99c05dad7}{}\label{tile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fab5b3793b961949c817c7c0d99c05dad7}
+}]4 2 0
+
+5 3 1 \index{S\+O\+U\+TH@{S\+O\+U\+TH}!tile.\+h@{tile.\+h}}\index{tile.\+h@{tile.\+h}!S\+O\+U\+TH@{S\+O\+U\+TH}}\item[{\em 
+S\+O\+U\+TH\hypertarget{tile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fa8ef5c0bce69283a9986011a63eea8a6b}{}\label{tile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fa8ef5c0bce69283a9986011a63eea8a6b}
+}]5 4
+
+3 2
+
+1 0 \index{W\+E\+ST@{W\+E\+ST}!tile.\+h@{tile.\+h}}\index{tile.\+h@{tile.\+h}!W\+E\+ST@{W\+E\+ST}}\item[{\em 
+W\+E\+ST\hypertarget{tile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fae9449e8683a8199dad36b07a63b2f523}{}\label{tile_8h_a1fe4cded84ddee1e53a7d351ee0ef77fae9449e8683a8199dad36b07a63b2f523}
+}]1 3 5
+
+0 2 4 \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{tile.\+h@{tile.\+h}!tile\+\_\+init@{tile\+\_\+init}}
+\index{tile\+\_\+init@{tile\+\_\+init}!tile.\+h@{tile.\+h}}
+\subsubsection[{\texorpdfstring{tile\+\_\+init(t\+\_\+tile $\ast$tile)}{tile_init(t_tile *tile)}}]{\setlength{\rightskip}{0pt plus 5cm}void tile\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+tile} $\ast$}]{tile}
+\end{DoxyParamCaption}
+)}\hypertarget{tile_8h_ac3f625a8ba9b89eb1ef22a3a4d38bda0}{}\label{tile_8h_ac3f625a8ba9b89eb1ef22a3a4d38bda0}
+
+
+Initialise the tile. 
+
+\begin{DoxyAttention}{Attention}
+\+: the terrains are initialized to \textquotesingle{}U\+N\+K\+N\+O\+WN\textquotesingle{} You shall call \textquotesingle{}tile\+\_\+set\+\_\+terrain\textquotesingle{} to set terrain explicitly 
+\end{DoxyAttention}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{tile_8h_aa1be99c95c470ac302ccb8597ef5a760}{tile\+\_\+set\+\_\+terrain} 
+\end{DoxySeeAlso}
+\index{tile.\+h@{tile.\+h}!tile\+\_\+set\+\_\+terrain@{tile\+\_\+set\+\_\+terrain}}
+\index{tile\+\_\+set\+\_\+terrain@{tile\+\_\+set\+\_\+terrain}!tile.\+h@{tile.\+h}}
+\subsubsection[{\texorpdfstring{tile\+\_\+set\+\_\+terrain(t\+\_\+tile $\ast$tile, enum e\+\_\+terrains terrain, B\+Y\+T\+E index)}{tile_set_terrain(t_tile *tile, enum e_terrains terrain, BYTE index)}}]{\setlength{\rightskip}{0pt plus 5cm}int tile\+\_\+set\+\_\+terrain (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+tile} $\ast$}]{tile, }
+\item[{enum e\+\_\+terrains}]{terrain, }
+\item[{{\bf B\+Y\+TE}}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{tile_8h_aa1be99c95c470ac302ccb8597ef5a760}{}\label{tile_8h_aa1be99c95c470ac302ccb8597ef5a760}
+
+
+set a terrain on the tile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile} & \+: the tile instance \\
+\hline
+{\em terrain} & \+: the terrain \\
+\hline
+{\em index} & \+: the terrain\textquotesingle{}s index on the tile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the terrain could be set, 0 else 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\index{tile.\+h@{tile.\+h}!T\+E\+R\+R\+A\+I\+N\+\_\+\+O\+F\+F\+S\+ET@{T\+E\+R\+R\+A\+I\+N\+\_\+\+O\+F\+F\+S\+ET}}
+\index{T\+E\+R\+R\+A\+I\+N\+\_\+\+O\+F\+F\+S\+ET@{T\+E\+R\+R\+A\+I\+N\+\_\+\+O\+F\+F\+S\+ET}!tile.\+h@{tile.\+h}}
+\subsubsection[{\texorpdfstring{T\+E\+R\+R\+A\+I\+N\+\_\+\+O\+F\+F\+S\+ET}{TERRAIN_OFFSET}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+Y\+TE} T\+E\+R\+R\+A\+I\+N\+\_\+\+O\+F\+F\+S\+ET\mbox{[}4\mbox{]}\mbox{[}6\mbox{]}\mbox{[}2\mbox{]}}\hypertarget{tile_8h_a6d05df020c7f8322630b0aadaa3ba3ea}{}\label{tile_8h_a6d05df020c7f8322630b0aadaa3ba3ea}
+tile\textquotesingle{}s terrains position relative to it origin within it rotation e.\+g\+: T\+E\+R\+R\+A\+I\+N\+\_\+\+O\+F\+F\+S\+ET\mbox{[}N\+O\+R\+TH\mbox{]}\mbox{[}0\mbox{]} == (0, 0) T\+E\+R\+R\+A\+I\+N\+\_\+\+O\+F\+F\+S\+ET\mbox{[}N\+O\+R\+TH\mbox{]}\mbox{[}1\mbox{]} == (1, 0) 

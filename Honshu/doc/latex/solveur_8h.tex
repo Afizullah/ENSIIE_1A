@@ -1,0 +1,174 @@
+\hypertarget{solveur_8h}{}\section{/home/rpereira/\+Honshu/includes/solveur.h File Reference}
+\label{solveur_8h}\index{/home/rpereira/\+Honshu/includes/solveur.\+h@{/home/rpereira/\+Honshu/includes/solveur.\+h}}
+
+
+fonction sur les solveurs  
+
+
+{\ttfamily \#include \char`\"{}honshu.\+h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structs__insertion}{s\+\_\+insertion}
+\item 
+struct \hyperlink{structs__resultat}{s\+\_\+resultat}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structs__insertion}{s\+\_\+insertion} \hyperlink{solveur_8h_a314021ae07491a975b3850efbcfd2d31}{t\+\_\+insertion}
+\item 
+typedef struct \hyperlink{structs__resultat}{s\+\_\+resultat} \hyperlink{solveur_8h_a97610849a0fd3acb8930292f87e34515}{t\+\_\+resultat}
+\item 
+typedef \hyperlink{solveur_8h_a97610849a0fd3acb8930292f87e34515}{t\+\_\+resultat} $\ast$($\ast$ \hyperlink{solveur_8h_ab2ecc86462bed88f247cc2a133413ba4}{t\+\_\+solveur}) (\hyperlink{structs__grille}{t\+\_\+grille} $\ast$grille)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{solveur_8h_a97610849a0fd3acb8930292f87e34515}{t\+\_\+resultat} $\ast$ \hyperlink{solveur_8h_aa71b759d166036ae1af06c79c053bba0}{solve\+\_\+brute} (\hyperlink{structs__grille}{t\+\_\+grille} $\ast$grille)
+\begin{DoxyCompactList}\small\item\em trouves la solution optimal par brute force (optimum global), en fonction de l\textquotesingle{}état du jeu passé en paramètre. \end{DoxyCompactList}\item 
+\hyperlink{solveur_8h_a97610849a0fd3acb8930292f87e34515}{t\+\_\+resultat} $\ast$ \hyperlink{solveur_8h_a9dcf8975890b519a3a6754448171a32c}{solve\+\_\+brute\+\_\+filtre} (\hyperlink{structs__grille}{t\+\_\+grille} $\ast$grille)
+\begin{DoxyCompactList}\small\item\em trouves une solution par brute force en appliquant un filtre \end{DoxyCompactList}\item 
+\hyperlink{solveur_8h_a97610849a0fd3acb8930292f87e34515}{t\+\_\+resultat} $\ast$ \hyperlink{solveur_8h_a87c1fccf64fcf45b064fc944e9428341}{solve\+\_\+glouton} (\hyperlink{structs__grille}{t\+\_\+grille} $\ast$grille)
+\begin{DoxyCompactList}\small\item\em trouves une solution par un algorithme glouton (optimum local), en fonction de l\textquotesingle{}état du jeu passé en paramètre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+fonction sur les solveurs 
+
+\begin{DoxyAuthor}{Authors}
+Romain P\+E\+R\+E\+I\+RA, Douha O\+U\+R\+I\+MI, Afizullah R\+A\+H\+M\+A\+NY, Guang\+Yue C\+H\+EN 
+\end{DoxyAuthor}
+
+
+\subsection{Typedef Documentation}
+\index{solveur.\+h@{solveur.\+h}!t\+\_\+insertion@{t\+\_\+insertion}}
+\index{t\+\_\+insertion@{t\+\_\+insertion}!solveur.\+h@{solveur.\+h}}
+\subsubsection[{\texorpdfstring{t\+\_\+insertion}{t_insertion}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf s\+\_\+insertion}		 {\bf t\+\_\+insertion}}\hypertarget{solveur_8h_a314021ae07491a975b3850efbcfd2d31}{}\label{solveur_8h_a314021ae07491a975b3850efbcfd2d31}
+structure qui enregistre une insertion de tuiles \index{solveur.\+h@{solveur.\+h}!t\+\_\+resultat@{t\+\_\+resultat}}
+\index{t\+\_\+resultat@{t\+\_\+resultat}!solveur.\+h@{solveur.\+h}}
+\subsubsection[{\texorpdfstring{t\+\_\+resultat}{t_resultat}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf s\+\_\+resultat}		 {\bf t\+\_\+resultat}}\hypertarget{solveur_8h_a97610849a0fd3acb8930292f87e34515}{}\label{solveur_8h_a97610849a0fd3acb8930292f87e34515}
+structure qui renvoie le résultat du solveur \index{solveur.\+h@{solveur.\+h}!t\+\_\+solveur@{t\+\_\+solveur}}
+\index{t\+\_\+solveur@{t\+\_\+solveur}!solveur.\+h@{solveur.\+h}}
+\subsubsection[{\texorpdfstring{t\+\_\+solveur}{t_solveur}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf t\+\_\+resultat}$\ast$($\ast$  t\+\_\+solveur) ({\bf t\+\_\+grille} $\ast$grille)}\hypertarget{solveur_8h_ab2ecc86462bed88f247cc2a133413ba4}{}\label{solveur_8h_ab2ecc86462bed88f247cc2a133413ba4}
+typedef d\textquotesingle{}une fonction de résolution 
+
+\subsection{Function Documentation}
+\index{solveur.\+h@{solveur.\+h}!solve\+\_\+brute@{solve\+\_\+brute}}
+\index{solve\+\_\+brute@{solve\+\_\+brute}!solveur.\+h@{solveur.\+h}}
+\subsubsection[{\texorpdfstring{solve\+\_\+brute(t\+\_\+grille $\ast$grille)}{solve_brute(t_grille *grille)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+resultat}$\ast$ solve\+\_\+brute (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+grille} $\ast$}]{grille}
+\end{DoxyParamCaption}
+)}\hypertarget{solveur_8h_aa71b759d166036ae1af06c79c053bba0}{}\label{solveur_8h_aa71b759d166036ae1af06c79c053bba0}
+
+
+trouves la solution optimal par brute force (optimum global), en fonction de l\textquotesingle{}état du jeu passé en paramètre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & \+: l\textquotesingle{}état de la grille (et des tuiles) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le resultat du solveur pour obtenir un score optimal 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+Le resultat doit être \textquotesingle{}free()\textquotesingle{} ! 
+\end{DoxyAttention}
+\begin{DoxySeeAlso}{See also}
+struct \hyperlink{structs__resultat}{s\+\_\+resultat}
+\end{DoxySeeAlso}
+trouves la solution optimal par brute force (optimum global), en fonction de l\textquotesingle{}état du jeu passé en paramètre.
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & \+: l\textquotesingle{}état de la grille (et des tuiles) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le resultat du solveur pour obtenir un score optimal 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+Le resultat doit être \textquotesingle{}free()\textquotesingle{} ! 
+\end{DoxyAttention}
+\begin{DoxySeeAlso}{See also}
+struct \hyperlink{structs__resultat}{s\+\_\+resultat} 
+\end{DoxySeeAlso}
+erreur malloc
+
+on résout
+
+on libère le buffer \index{solveur.\+h@{solveur.\+h}!solve\+\_\+brute\+\_\+filtre@{solve\+\_\+brute\+\_\+filtre}}
+\index{solve\+\_\+brute\+\_\+filtre@{solve\+\_\+brute\+\_\+filtre}!solveur.\+h@{solveur.\+h}}
+\subsubsection[{\texorpdfstring{solve\+\_\+brute\+\_\+filtre(t\+\_\+grille $\ast$grille)}{solve_brute_filtre(t_grille *grille)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+resultat}$\ast$ solve\+\_\+brute\+\_\+filtre (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+grille} $\ast$}]{grille}
+\end{DoxyParamCaption}
+)}\hypertarget{solveur_8h_a9dcf8975890b519a3a6754448171a32c}{}\label{solveur_8h_a9dcf8975890b519a3a6754448171a32c}
+
+
+trouves une solution par brute force en appliquant un filtre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & \+: l\textquotesingle{}état de la grille (et des tuiles) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le resultat du solveur 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+Le resultat doit être \textquotesingle{}free()\textquotesingle{} ! 
+\end{DoxyAttention}
+\begin{DoxySeeAlso}{See also}
+struct \hyperlink{structs__resultat}{s\+\_\+resultat}
+\end{DoxySeeAlso}
+trouves une solution par brute force en appliquant un filtre
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & \+: l\textquotesingle{}état de la grille (et des tuiles) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le resultat du solveur pour obtenir un score optimal 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+Le resultat doit être \textquotesingle{}free()\textquotesingle{} ! 
+\end{DoxyAttention}
+\begin{DoxySeeAlso}{See also}
+struct \hyperlink{structs__resultat}{s\+\_\+resultat} 
+\end{DoxySeeAlso}
+erreur malloc
+
+on résout
+
+on libère le buffer \index{solveur.\+h@{solveur.\+h}!solve\+\_\+glouton@{solve\+\_\+glouton}}
+\index{solve\+\_\+glouton@{solve\+\_\+glouton}!solveur.\+h@{solveur.\+h}}
+\subsubsection[{\texorpdfstring{solve\+\_\+glouton(t\+\_\+grille $\ast$grille)}{solve_glouton(t_grille *grille)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+resultat}$\ast$ solve\+\_\+glouton (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+grille} $\ast$}]{grille}
+\end{DoxyParamCaption}
+)}\hypertarget{solveur_8h_a87c1fccf64fcf45b064fc944e9428341}{}\label{solveur_8h_a87c1fccf64fcf45b064fc944e9428341}
+
+
+trouves une solution par un algorithme glouton (optimum local), en fonction de l\textquotesingle{}état du jeu passé en paramètre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & \+: l\textquotesingle{}état de la grille (et des tuiles) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le resultat du solveur pour obtenir un score optimal 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+Le resultat doit être \textquotesingle{}free()\textquotesingle{} ! 
+\end{DoxyAttention}
+\begin{DoxySeeAlso}{See also}
+struct \hyperlink{structs__resultat}{s\+\_\+resultat} 
+\end{DoxySeeAlso}
+erreur malloc
+
+on résout 
